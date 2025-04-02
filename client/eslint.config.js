@@ -21,6 +21,9 @@ export default [
       'react-refresh': reactRefresh,
     },
     rules: {
+      "import/no-unresolved": "error",
+      "import/no-named-as-default": "warn",
+      "import/no-case-sensitive": "error",
       ...js.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
