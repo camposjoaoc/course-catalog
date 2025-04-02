@@ -1,19 +1,17 @@
-
-@use "./Variables";
+@use "./Variables" as *;
+@use "./Global" as *;
 
 /* Root container for the app */
 #root {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .container {
-    
-    width: 100%;
-    max-width: 1600px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 1600px;
+  height: auto;
 }
+
