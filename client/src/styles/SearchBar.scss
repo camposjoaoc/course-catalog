@@ -33,15 +33,17 @@
  
   .search-button {
     padding: 10px 15px;
+    width: 100px;
     background-color: #007BFF;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
+    transition: 0.3s;
   }
   
   .search-button:hover {
-    background-color: #0056b3;
+    background-color: #013e80;
   }
   
   
