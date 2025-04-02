@@ -2,9 +2,23 @@
     width: 50px;
     height: 50px;
     padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    border: 2px solid #000000;
-    border-radius: 50px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
     cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition:
+        transform 0.1s ease,
+        box-shadow 0.1s ease;
+
+    /* Sombra 3D */
+    box-shadow: 2px 2px 0 #000;
+
+    /* Empurrar ao clicar */
+    &:active {
+        transform: translate(2px, 2px);
+        box-shadow: 2px 2px 0 #000;
+    }
 }
