@@ -1,17 +1,25 @@
-// src/components/SearchBar.jsx
-import React, { useState } from 'react';
-import '../styles/SearchBar.scss';
+
+import React, { useState } from "react";
+import "../styles/searchBar.scss"; 
 
 const SearchBar = ({ onSearch }) => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedLocation, setSelectedLocation] = useState("");
 
-  const handleChange = (event) => {
+ 
+  const locations = ["Malmö", "Stockholm", "Gothenburg", "Uppsala", "Jönköping"];
+
+  const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
+  };
+
+  const handleLocationChange = (event) => {
+    setSelectedLocation(event.target.value);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onSearch(searchTerm);
+    onSearch(searchTerm, selectedLocation); 
   };
 
   return (
@@ -20,9 +28,21 @@ const SearchBar = ({ onSearch }) => {
         type="text"
         className="search-input"
         value={searchTerm}
-        onChange={handleChange}
+        onChange={handleSearchChange}
         placeholder="Search..."
       />
+      <select
+        className="location-select"
+        value={selectedLocation}
+        onChange={handleLocationChange}
+      >
+        <option value="">Select Location</option>
+        {locations.map((location, index) => (
+          <option key={index} value={location}>
+            {location}
+          </option>
+        ))}
+      </select>
       <button type="submit" className="search-button">Search</button>
     </form>
   );
