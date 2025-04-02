@@ -9,9 +9,10 @@
     width: 45vw;
     height: 20vh;
     gap: 16px;
-    border-radius: 20px;
+    border-radius: 45px;
     border: 2px solid #000000;
-    box-shadow: 0 14px 10px 0 rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 14px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 5px 0 #000;
     overflow: auto;
 }
 .course-content {
