@@ -6,12 +6,13 @@
     grid-template-columns: 1fr auto;
     align-items: center;
     padding: 10px;
-    width: 45vw;
-    height: 20vh;
+
+    width: 755px;
+    height: 180px;
+
     gap: 16px;
     border-radius: 45px;
     border: 2px solid #000000;
-    // box-shadow: 0 14px 10px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 1px 5px 0 #000;
     overflow: auto;
 }
@@ -28,6 +29,14 @@
         margin: 0 0 5px 0;
     }
 
+    .course-info-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
     .course-info {
         display: flex;
         margin: 0;
@@ -39,9 +48,6 @@
     }
 }
 
-.course-action {
-    margin: 0 20px 0 0;
-    padding-bottom: 10vh;
-    display: flex;
-    align-items: flex-start;
+.course-action{
+    margin-bottom: 80px;
 }
