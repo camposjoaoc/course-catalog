@@ -1,28 +1,39 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
-import GoToCourseBtn from './GoToCourseBtn.jsx';
+import GoToCourseBtn from "../components/GoToCourseBtn";
+import CourseStatusBadge from "../components/CourseStatusBadge";
 import '../styles/CourseCard.scss';
 
-function CourseCard() {
+function CourseCard({
+    title,
+    description,
+    location,
+    startDate,
+    csnEligible,
+    status
+}) {
     return (
         <div className="course-card">
             <div className="course-content">
-                <h2 className="course-title">Frontend Developer</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget dolor. Aenean massa.
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <div className="course-info">
-                    <span><FontAwesomeIcon icon={faLocationDot} /> Malmö</span>
-                    <span><FontAwesomeIcon icon={faCalendarDays} /> Sep 2025</span>
-                    <span>/ CSN Eligible</span>
+                <h2 className="course-title">{title}</h2>
+                <p>{description}</p>
+
+                <div className="course-info-row">
+                    <div className="course-info">
+                        <span><FontAwesomeIcon icon={faLocationDot} /> {location}</span>
+                        <span><FontAwesomeIcon icon={faCalendarDays} /> {startDate}</span>
+                        {csnEligible && <span>/ CSN Eligible</span>}
+                    </div>
+
+                    <CourseStatusBadge status={status} />
                 </div>
             </div>
+
             <div className="course-action">
                 <GoToCourseBtn />
             </div>
         </div>
     );
 }
-
 export default CourseCard;

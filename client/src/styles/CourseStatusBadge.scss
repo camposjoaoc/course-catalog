@@ -1,0 +1,27 @@
+@use "./Variables" as *;
+@use "./Global" as *;
+
+.status-badge {
+    display: inline-block;
+    width: 180px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px; // full-rounded pill
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    font-family: $font-family-body;
+    border: none;
+
+    &--open {
+        background-color: $color-tertiary;
+    }
+
+    &--closed {
+        background-color: $color-quaternary;
+    }
+
+    &--late {
+        background-color: $color-quinary;
+    }
+}

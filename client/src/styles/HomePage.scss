@@ -1,0 +1,35 @@
+@use "./Variables" as *;
+@use "./Global" as *;
+
+.home-page-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "navbar navbar"
+        "sidebar main"
+        "sidebar footer";
+}
+
+nav {
+    grid-area: navbar;
+}
+aside {
+    grid-area: sidebar;
+    background-color: $color-secondary;
+}
+main {
+    grid-area: main;
+    position: sticky;
+    padding: 10px;
+}
+footer {
+    grid-area: footer;
+    background-color: $color-secondary;
+}
+
+.results-container {
+    display: grid;
+    justify-content: center;
+    gap: 25px;
+}
