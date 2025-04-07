@@ -13,6 +13,8 @@
 
 nav {
     grid-area: navbar;
+    background-color: $color-secondary;
+    height: 80px;
 }
 aside {
     grid-area: sidebar;
