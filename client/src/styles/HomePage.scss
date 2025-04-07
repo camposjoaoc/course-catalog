@@ -16,8 +16,9 @@ nav {
 }
 aside {
     grid-area: sidebar;
-    background-color: $color-secondary;
+    background-color: #2472c5;
 }
+
 main {
     grid-area: main;
     position: sticky;

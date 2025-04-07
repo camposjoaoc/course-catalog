@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../styles/SideFilters.scss";
+import schoolLogo from "../assets/img/schoolLogo.jpg";
 
 const Sidebar = () => {
   const [filters, setFilters] = useState({
@@ -40,6 +41,15 @@ const Sidebar = () => {
   console.log("Filters:", filters);
 
   return (
+    <>
+    <div className='school-info'>
+      <div className='school-logo'>
+       <img src={schoolLogo} alt="School Logo"/>
+      </div>
+      <h2>School X</h2>
+      <h4>Yrkeshögskola</h4>
+      <h4>Östra Kanalgatan 5211 41, Malmö</h4>
+    </div>
     <div className="sidebar">
       <h2>Filters</h2>
       {renderCheckboxGroup("Area", ["IT", "Engineering", "Health and care", "Sustainability", "Arts and Culture"])}
@@ -50,6 +60,7 @@ const Sidebar = () => {
       {renderCheckboxGroup("Certificate", ["Yes", "No"])}
       {renderCheckboxGroup("Language", ["English", "Swedish"])}
     </div>
+  </>
   );
 };
 
