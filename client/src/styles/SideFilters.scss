@@ -1,0 +1,32 @@
+
+.sidebar {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    width: 250px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  
+    h2 {
+      margin-bottom: 20px;
+    }
+  
+    .filter-group {
+      margin-bottom: 20px;
+  
+      h4 {
+        margin-bottom: 10px;
+      }
+  
+      label {
+        display: block;
+        margin-bottom: 5px;
+        cursor: pointer;
+      }
+  
+      input[type="checkbox"] {
+        margin-right: 8px;
+      }
+    }
+  }
+  

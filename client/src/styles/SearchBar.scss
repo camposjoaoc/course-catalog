@@ -1,5 +1,6 @@
 
-@use "./Variables";
+@use "./Variables" as *;
+@use "./Global" as *;
 
 
 .search-bar {

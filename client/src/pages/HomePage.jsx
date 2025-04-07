@@ -1,5 +1,6 @@
 import CourseCard from "../components/CourseCard";
 import SearchBar from "../components/SearchBar";
+import Sidebar from "../components/SideFilters"; 
 import "../styles/HomePage.scss";
 
 function HomePage() {
@@ -10,7 +11,7 @@ function HomePage() {
                     <p>navbar</p>
                 </nav>
                 <aside>
-                    <p>side-menu</p>
+                    <Sidebar />
                 </aside>
 
                 <main>
