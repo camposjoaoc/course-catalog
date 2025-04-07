@@ -13,11 +13,14 @@
 
 nav {
     grid-area: navbar;
+    background-color: $color-secondary;
+    height: 80px;
 }
 aside {
     grid-area: sidebar;
-    background-color: $color-secondary;
+    background-color: #2472c5;
 }
+
 main {
     grid-area: main;
     position: sticky;
