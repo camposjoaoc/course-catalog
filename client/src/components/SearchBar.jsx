@@ -23,6 +23,10 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
+    <>
+    <div>
+        <h1>Search for courses and programmes</h1>
+    </div>
     <form className="search-bar" onSubmit={handleSubmit}>
       <input
         type="text"
@@ -43,8 +47,11 @@ const SearchBar = ({ onSearch }) => {
           </option>
         ))}
       </select>
-      <button type="submit" className="search-button">Search</button>
     </form>
+    <div className="btn-container"> 
+      <button type="submit" className="search-button">Search</button>
+    </div>
+    </>
   );
 };
 

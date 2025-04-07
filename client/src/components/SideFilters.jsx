@@ -3,13 +3,13 @@ import "../styles/SideFilters.scss";
 
 const Sidebar = () => {
   const [filters, setFilters] = useState({
-    area: [],
-    studyForm: [],
-    type: [],
-    semester: [],
-    level: [],
-    certificate: [],
-    language: [],
+    Area: [],
+    StudyForm: [],
+    Type: [],
+    Semester: [],
+    Level: [],
+    Certificate: [],
+    Language: [],
   });
 
   const handleCheckboxChange = (section, value) => {
@@ -37,14 +37,16 @@ const Sidebar = () => {
     </div>
   );
 
+  console.log("Filters:", filters);
+
   return (
     <div className="sidebar">
       <h2>Filters</h2>
       {renderCheckboxGroup("Area", ["IT", "Engineering", "Health and care", "Sustainability", "Arts and Culture"])}
-      {renderCheckboxGroup("StudyForm", ["Remote", "On site"])}
+      {renderCheckboxGroup("StudyForm", ["Remote", "Campus", "Hybrid"])}
       {renderCheckboxGroup("Type", ["Program", "Course"])}
       {renderCheckboxGroup("Semester", ["Spring 2025", "Autumn 2025", "Spring 2026"])}
-      {renderCheckboxGroup("Level", ["Bachelor’s", "Master’s", "Specialization"])}
+      {renderCheckboxGroup("Level", ["Bachelor", "Master", "Specialization"])}
       {renderCheckboxGroup("Certificate", ["Yes", "No"])}
       {renderCheckboxGroup("Language", ["English", "Swedish"])}
     </div>
