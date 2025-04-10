@@ -1,9 +1,14 @@
 import CourseCard from "../components/CourseCard";
 import SearchBar from "../components/SearchBar";
-import Sidebar from "../components/SideFilters"; 
+import Sidebar from "../components/SideFilters";
 import "../styles/HomePage.scss";
 
+const sidebar = document.getElementById("sidebar");
+function toggleSidebar() {
+    sidebar.classList.toggle("show");
+}
 function HomePage() {
+
     return (
         <>
             <div className="home-page-container">
