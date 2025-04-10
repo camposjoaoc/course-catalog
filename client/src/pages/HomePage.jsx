@@ -7,7 +7,7 @@ import LoadMoreButton from "../components/LoadMoreButton";
 
 function HomePage() {
     const handleLoadMore = () => {
-        console.log("Load more clicked!");
+        console.log("Load more clicked");
       };
     
     return (
@@ -71,7 +71,7 @@ function HomePage() {
                             location="Malmö"
                             startDate="Sep 2025"
                             csnEligible={true}
-                            status="late"
+                            status="closed"
                         >
                         </CourseCard>
 
