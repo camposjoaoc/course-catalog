@@ -1,0 +1,51 @@
+@use "./Variables" as *;
+@use "./Global" as *;
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 4rem 0;
+    flex-wrap: wrap;
+    font-family: $font-family-body;
+  }
+  
+  .info-box {
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 100%;
+  }
+  
+  .school {
+    background-color: $color-primary;
+    color: white;
+  
+    button {
+      background-color: white;
+      color: $color-primary;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+  
+  .help {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+  
+    button {
+      background-color: transparent;
+      color: $color-primary;
+      border: 1px solid $color-primary;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+  

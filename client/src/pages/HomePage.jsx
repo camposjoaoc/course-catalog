@@ -2,6 +2,7 @@ import CourseCard from "../components/CourseCard";
 import SearchBar from "../components/SearchBar";
 import Sidebar from "../components/SideFilters"; 
 import "../styles/HomePage.scss";
+import InfoSection from "../components/InfoSection";
 
 function HomePage() {
     return (
@@ -78,6 +79,9 @@ function HomePage() {
                             status="closed"
                         >
                         </CourseCard>
+                    </div>
+                    <div>
+                        <InfoSection />
                     </div>
                 </main>
                 <footer>
