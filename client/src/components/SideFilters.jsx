@@ -61,7 +61,7 @@ const Sidebar = () => {
       <h2>Filters</h2>
       <div className="filter-section">
             <h3>Area</h3>
-            <select value={filters.area[0] || ''} onChange={(e) => handleDropdownChange('area', e.target.value)}>
+            <select className="select-side-filters" value={filters.area[0] || ''} onChange={(e) => handleDropdownChange('area', e.target.value)}>
               <option value="">Select an area</option>
               <option value="Design">Design</option>
               <option value="Engineering">Engineering</option>

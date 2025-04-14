@@ -1,64 +1,57 @@
-
 @use "./Variables" as *;
 @use "./Global" as *;
 
-
 .search-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 20px 0;
-    font-family: $font-family-heading;
-  }
-  
- 
-  .search-input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 40%;
-    margin-right: 10px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+  font-family: $font-family-heading;
+}
 
-  .location-select {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px;
-    width: 40%;
-  }
-  
-  .btn-container {
-      display: flex;
-      justify-content: center;
-      align-items: center; 
-      margin-bottom: 2rem; 
-  }
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 40%;
+  margin-right: 10px;
+}
 
+.location-select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 40%;
+}
 
-  .search-button {
-    padding: 10px 15px;
-    width: 120px;
-    justify-items: center;
-    background-color: #2472c5;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-family: $font-family-heading; 
-  }
-  
-  .search-button:hover {
-    background-color: #013e80;
-  }
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.search-button {
+  padding: 10px 15px;
+  width: 120px;
+  justify-items: center;
+  background-color: #2472c5;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: $font-family-heading;
+}
+
+.search-button:hover {
+  background-color: #013e80;
+}
 
 h1 {
   text-align: center;
 }
-  
-  
