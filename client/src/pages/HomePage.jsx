@@ -4,6 +4,8 @@ import CoursesData from "../data/CoursesData.json";
 import SearchBar from "../components/SearchBar";
 import Sidebar from "../components/SideFilters";
 import "../styles/HomePage.scss";
+import InfoSection from "../components/InfoSection";
+import LoadMoreButton from "../components/LoadMoreButton";
 
 function HomePage() {
     const [visibleCourses, setVisibleCourses] = useState(5);
@@ -13,7 +15,7 @@ function HomePage() {
     };
 
     const coursesToShow = CoursesData.slice(0, visibleCourses);
-
+ 
     return (
         <>
             <div className="home-page-container">
@@ -47,6 +49,11 @@ function HomePage() {
                                 </button>
                             </div>
                         )}
+                        
+                        <LoadMoreButton onClick={handleLoadMore} />
+                    </div>
+                    <div>
+                        <InfoSection />
                     </div>
                 </main>
                 <footer>

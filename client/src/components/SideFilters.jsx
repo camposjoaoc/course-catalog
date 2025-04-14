@@ -4,7 +4,7 @@ import schoolLogo from "../assets/img/schoolLogo.jpg";
 
 const Sidebar = () => {
   const [filters, setFilters] = useState({
-    Area: [],
+    area: [],
     StudyForm: [],
     Type: [],
     Semester: [],
@@ -20,6 +20,13 @@ const Sidebar = () => {
         : [...prev[section], value];
       return { ...prev, [section]: updated };
     });
+  };
+
+  const handleDropdownChange = (section, value) => {
+    setFilters((prev) => ({
+      ...prev,
+      [section]: value ? [value] : [],
+    }));
   };
 
   const renderCheckboxGroup = (section, options) => (
@@ -52,7 +59,17 @@ const Sidebar = () => {
     </div>
     <div className="sidebar">
       <h2>Filters</h2>
-      {renderCheckboxGroup("Area", ["IT", "Engineering", "Health and care", "Sustainability", "Arts and Culture"])}
+      <div className="filter-section">
+            <h3>Area</h3>
+            <select value={filters.area[0] || ''} onChange={(e) => handleDropdownChange('area', e.target.value)}>
+              <option value="">Select an area</option>
+              <option value="Design">Design</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Health and care">Health and care</option>
+              <option value="Sustainability">Sustainability</option>
+              <option value="Arts and Culture">Arts and Culture</option>
+            </select>
+          </div>
       {renderCheckboxGroup("StudyForm", ["Remote", "Campus", "Hybrid"])}
       {renderCheckboxGroup("Type", ["Program", "Course"])}
       {renderCheckboxGroup("Semester", ["Spring 2025", "Autumn 2025", "Spring 2026"])}
