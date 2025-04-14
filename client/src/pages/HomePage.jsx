@@ -1,13 +1,18 @@
+import React, { useState } from "react";
 import CourseCard from "../components/CourseCard";
+import CoursesData from "../data/CoursesData.json";
 import SearchBar from "../components/SearchBar";
 import Sidebar from "../components/SideFilters";
 import "../styles/HomePage.scss";
 
-const sidebar = document.getElementById("sidebar");
-function toggleSidebar() {
-    sidebar.classList.toggle("show");
-}
 function HomePage() {
+    const [visibleCourses, setVisibleCourses] = useState(5);
+
+    const handleLoadMore = () => {
+        setVisibleCourses(prev => prev + 5);
+    };
+
+    const coursesToShow = CoursesData.slice(0, visibleCourses);
 
     return (
         <>
@@ -24,65 +29,24 @@ function HomePage() {
                         <SearchBar />
                     </div>
                     <div className="results-container">
-                        <CourseCard
-                            title="Frontend Developer"
-                            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            location="Malmö"
-                            startDate="Sep 2025"
-                            csnEligible={true}
-                            status="closed"
-                        >
-                        </CourseCard>
-
-                        <CourseCard
-                            title="Frontend Developer"
-                            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            location="Malmö"
-                            startDate="Sep 2025"
-                            csnEligible={true}
-                            status="open"
-                        >
-                        </CourseCard>
-
-                        <CourseCard
-                            title="Frontend Developer"
-                            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            location="Malmö"
-                            startDate="Sep 2025"
-                            csnEligible={true}
-                            status="late"
-                        >
-                        </CourseCard>
-
-                        <CourseCard
-                            title="Frontend Developer"
-                            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            location="Malmö"
-                            startDate="Sep 2025"
-                            csnEligible={true}
-                            status="open"
-                        >
-                        </CourseCard>
-
-                        <CourseCard
-                            title="Frontend Developer"
-                            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            location="Malmö"
-                            startDate="Sep 2025"
-                            csnEligible={true}
-                            status="late"
-                        >
-                        </CourseCard>
-
-                        <CourseCard
-                            title="Frontend Developer"
-                            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            location="Malmö"
-                            startDate="Sep 2025"
-                            csnEligible={true}
-                            status="closed"
-                        >
-                        </CourseCard>
+                        {coursesToShow.map((course) => (
+                            <CourseCard
+                                key={course.id}
+                                title={course.title}
+                                description={course.description}
+                                location={course.location}
+                                startDate={course.startDate}
+                                csnEligible={course.csnEligible}
+                                status={course.status}
+                            />
+                        ))}
+                        {visibleCourses < CoursesData.length && (
+                            <div className="load-more-container">
+                                <button onClick={handleLoadMore} className="load-more-btn">
+                                    More
+                                </button>
+                            </div>
+                        )}
                     </div>
                 </main>
                 <footer>

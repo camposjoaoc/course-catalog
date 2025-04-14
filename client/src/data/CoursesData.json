@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "title": "Frontend Developer",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+        "location": "Malmö",
+        "startDate": "Sep 2025",
+        "csnEligible": true,
+        "status": "open"
+    },
+    {
+        "id": 2,
+        "title": "Backend Developer",
+        "description": "Build robust server-side applications using Node.js, Express, and databases like PostgreSQL.",
+        "location": "Stockholm",
+        "startDate": "Oct 2025",
+        "csnEligible": false,
+        "status": "late"
+    },
+    {
+        "id": 3,
+        "title": "Full Stack Web Developer",
+        "description": "Learn both frontend and backend technologies to become a versatile full stack developer.",
+        "location": "Online",
+        "startDate": "Nov 2025",
+        "csnEligible": true,
+        "status": "closed"
+    },
+    {
+        "id": 4,
+        "title": "UI/UX Design",
+        "description": "Master user interface and user experience design with hands-on tools like Figma and Adobe XD.",
+        "location": "Gothenburg",
+        "startDate": "Aug 2025",
+        "csnEligible": true,
+        "status": "open"
+    },
+    {
+        "id": 5,
+        "title": "DevOps & Cloud Engineering",
+        "description": "Get familiar with CI/CD, containerization (Docker), and cloud platforms like AWS and Azure.",
+        "location": "Online",
+        "startDate": "Jul 2025",
+        "csnEligible": false,
+        "status": "open"
+    },
+    {
+        "id": 6,
+        "title": "Mobile App Development",
+        "description": "Build native and hybrid mobile applications using React Native and Flutter.",
+        "location": "Malmö",
+        "startDate": "Sep 2025",
+        "csnEligible": true,
+        "status": "closed"
+    },
+    {
+        "id": 7,
+        "title": "Data Science & Python",
+        "description": "Analyze data, create models and gain insights using Python, Pandas, and machine learning.",
+        "location": "Stockholm",
+        "startDate": "Oct 2025",
+        "csnEligible": true,
+        "status": "open"
+    },
+    {
+        "id": 8,
+        "title": "Cybersecurity Fundamentals",
+        "description": "Understand basic security principles and protect applications from threats and vulnerabilities.",
+        "location": "Online",
+        "startDate": "Oct 2025",
+        "csnEligible": false,
+        "status": "open"
+    },
+    {
+        "id": 9,
+        "title": "AI & Machine Learning",
+        "description": "Explore artificial intelligence concepts, neural networks, and machine learning models.",
+        "location": "Gothenburg",
+        "startDate": "Nov 2025",
+        "csnEligible": true,
+        "status": "open"
+    },
+    {
+        "id": 10,
+        "title": "Cloud Architecture",
+        "description": "Design and manage scalable cloud infrastructure using AWS, Azure, and Google Cloud.",
+        "location": "Stockholm",
+        "startDate": "Dec 2025",
+        "csnEligible": false,
+        "status": "late"
+    },
+    {
+        "id": 11,
+        "title": "Game Development",
+        "description": "Learn to build 2D and 3D games using Unity and C# from scratch.",
+        "location": "Malmö",
+        "startDate": "Sep 2025",
+        "csnEligible": true,
+        "status": "open"
+    },
+    {
+        "id": 12,
+        "title": "Tech Project Management",
+        "description": "Gain skills in Agile, Scrum, and Kanban to manage development teams efficiently.",
+        "location": "Online",
+        "startDate": "Aug 2025",
+        "csnEligible": true,
+        "status": "open"
+    },
+    {
+        "id": 13,
+        "title": "Intro to Programming",
+        "description": "Perfect for beginners—learn programming logic with JavaScript and Python.",
+        "location": "Online",
+        "startDate": "Jul 2025",
+        "csnEligible": false,
+        "status": "open"
+    },
+    {
+        "id": 14,
+        "title": "Tech for Entrepreneurs",
+        "description": "Turn ideas into products. Learn the basics of web apps, MVPs, and prototyping.",
+        "location": "Stockholm",
+        "startDate": "Oct 2025",
+        "csnEligible": true,
+        "status": "closed"
+    },
+    {
+        "id": 15,
+        "title": "Web Accessibility",
+        "description": "Build inclusive websites by following accessibility standards (WCAG).",
+        "location": "Gothenburg",
+        "startDate": "Nov 2025",
+        "csnEligible": true,
+        "status": "open"
+    },
+    {
+        "id": 16,
+        "title": "React & Redux Mastery",
+        "description": "Go beyond basics and master advanced React patterns and Redux state management.",
+        "location": "Online",
+        "startDate": "Dec 2025",
+        "csnEligible": true,
+        "status": "open"
+    },
+    {
+        "id": 17,
+        "title": "Testing in JavaScript",
+        "description": "Write tests using tools like Jest, Cypress, and Testing Library for solid frontend apps.",
+        "location": "Malmö",
+        "startDate": "Sep 2025",
+        "csnEligible": true,
+        "status": "late"
+    },
+    {
+        "id": 18,
+        "title": "Intro to TypeScript",
+        "description": "Make your JavaScript code safer and more scalable with TypeScript.",
+        "location": "Online",
+        "startDate": "Oct 2025",
+        "csnEligible": false,
+        "status": "open"
+    },
+    {
+        "id": 19,
+        "title": "APIs & RESTful Services",
+        "description": "Build and consume REST APIs with Express and document them using Swagger.",
+        "location": "Stockholm",
+        "startDate": "Nov 2025",
+        "csnEligible": true,
+        "status": "open"
+    },
+    {
+        "id": 20,
+        "title": "Java Fundamentals",
+        "description": "Solid foundation in Java programming, OOP, and common libraries.",
+        "location": "Gothenburg",
+        "startDate": "Dec 2025",
+        "csnEligible": false,
+        "status": "open"
+    }
+]
