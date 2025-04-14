@@ -8,7 +8,7 @@ import "../styles/HomePage.scss";
 
 function HomePage() {
 
-  const courses = [
+  /*const courses = [
     {
       title: "Frontend Developer",
       description: "Lorem ipsum dolor sit amet...",
@@ -114,7 +114,7 @@ function HomePage() {
         <p>footer</p>
       </footer>
     </div>
-  );
-}
+  ); */
+} 
 
 export default HomePage;
