@@ -1,95 +1,120 @@
+import React, { useState } from "react";
 import CourseCard from "../components/CourseCard";
 import SearchBar from "../components/SearchBar";
 import Sidebar from "../components/SideFilters";
-import "../styles/HomePage.scss";
 import InfoSection from "../components/InfoSection";
 import LoadMoreButton from "../components/LoadMoreButton";
+import "../styles/HomePage.scss";
 
-const sidebar = document.getElementById("sidebar");
-function toggleSidebar() {
-    sidebar.classList.toggle("show");
-}
 function HomePage() {
-    const handleLoadMore = () => {
-        console.log("Load more clicked");
-      };   
-    return (
-        <>
-            <div className="home-page-container">
-                <nav>
-                    <p>navbar</p>
-                </nav>
-                <aside>
-                    <Sidebar />
-                </aside>
 
-                <main>
-                    <div>
-                        <SearchBar />
-                    </div>
-                    <div className="results-container">
-                        <CourseCard
-                            title="Frontend Developer"
-                            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            location="Malmö"
-                            startDate="Sep 2025"
-                            csnEligible={true}
-                            status="closed"
-                        >
-                        </CourseCard>
+  const courses = [
+    {
+      title: "Frontend Developer",
+      description: "Lorem ipsum dolor sit amet...",
+      location: "Malmö",
+      startDate: "Sep 2025",
+      csnEligible: true,
+      status: "closed",
+    },
+    {
+      title: "Business & Marketing",
+      description: "Lorem ipsum dolor sit amet...",
+      location: "Stockholm",
+      startDate: "Sep 2026",
+      csnEligible: true,
+      status: "open",
+    },
+    {
+      title: "Language & Culture",
+      description: "Lorem ipsum dolor sit amet...",
+      location: "Uppsala",
+      startDate: "Jan 2026",
+      csnEligible: true,
+      status: "late",
+    },
+    {
+      title: "UX/UI design",
+      description: "Lorem ipsum dolor sit amet...",
+      location: "Malmö",
+      startDate: "Sep 2025",
+      csnEligible: true,
+      status: "open",
+    },
+    {
+      title: "Frontend Developer",
+      description: "Lorem ipsum dolor sit amet...",
+      location: "Malmö",
+      startDate: "Sep 2025",
+      csnEligible: true,
+      status: "closed",
+    },
+    {
+        title: "Frontend Developer",
+        description: "Lorem ipsum dolor sit amet...",
+        location: "Malmö",
+        startDate: "Sep 2025",
+        csnEligible: true,
+        status: "closed",
+      },
+    {
+        title: "Frontend Developer",
+        description: "Lorem ipsum dolor sit amet...",
+        location: "Malmö",
+        startDate: "Sep 2025",
+        csnEligible: true,
+        status: "open",
+    },
+  ];
 
-                        <CourseCard
-                            title="Frontend Developer"
-                            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            location="Malmö"
-                            startDate="Sep 2025"
-                            csnEligible={true}
-                            status="open"
-                        >
-                        </CourseCard>
+  const [visibleCourses, setVisibleCourses] = useState(3); 
+  const handleLoadMore = () => {
+    setVisibleCourses((prev) => prev + 2); 
+  };
 
-                        <CourseCard
-                            title="Frontend Developer"
-                            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            location="Malmö"
-                            startDate="Sep 2025"
-                            csnEligible={true}
-                            status="late"
-                        >
-                        </CourseCard>
+  return (
+    <div className="home-page-container">
+      <nav>
+        <p>navbar</p>
+      </nav>
 
-                        <CourseCard
-                            title="Frontend Developer"
-                            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            location="Malmö"
-                            startDate="Sep 2025"
-                            csnEligible={true}
-                            status="open"
-                        >
-                        </CourseCard>
+      <aside>
+        <Sidebar />
+      </aside>
 
-                        <CourseCard
-                            title="Frontend Developer"
-                            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            location="Malmö"
-                            startDate="Sep 2025"
-                            csnEligible={true}
-                            status="closed"
-                        >
-                        </CourseCard>
+      <main>
+        <div>
+          <SearchBar />
+        </div>
 
-                        <LoadMoreButton onClick={handleLoadMore} />
-                    </div>
-                    <div>
-                        <InfoSection />
-                    </div>
-                </main>
-                <footer>
-                    <p>footer</p>
-                </footer>
-            </div>
-        </>
-    )
+        <div className="results-container">
+          {courses.slice(0, visibleCourses).map((course, index) => (
+            <CourseCard
+              key={index}
+              title={course.title}
+              description={course.description}
+              location={course.location}
+              startDate={course.startDate}
+              csnEligible={course.csnEligible}
+              status={course.status}
+            />
+          ))}
+
+          {visibleCourses < courses.length && (
+            <LoadMoreButton onClick={handleLoadMore} />
+          )}
+        </div>
+
+        <div>
+          <InfoSection />
+        </div>
+      </main>
+
+      <footer>
+        <p>footer</p>
+      </footer>
+    </div>
+  );
 }
 
 export default HomePage;
