@@ -1,0 +1,9 @@
+@use "./Variables" as *;
+@use "./Global" as *;
+
+.course-page-container {
+    padding: 2rem;
+    background-color: #f8f8f8;
+    min-height: 100vh;
+  }
+  

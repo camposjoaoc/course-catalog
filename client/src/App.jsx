@@ -5,6 +5,7 @@ import "./styles/App.scss";
 import "./styles/SearchBar.scss";
 import HomePage from "./pages/HomePage";
 import Sidebar from './components/SideFilters';
+import CoursePage from "./pages/CoursePage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/course/:id" element={<CoursePage />} />
       </Routes>
     </BrowserRouter>
     </div>
