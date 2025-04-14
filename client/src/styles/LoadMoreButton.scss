@@ -1,4 +1,5 @@
-
+@use "./Variables" as *;
+@use "./Global" as *;
 
 .load-more-container {
     display: flex;

@@ -1,94 +1,76 @@
+import React, { useState } from "react";
 import CourseCard from "../components/CourseCard";
+import CoursesData from "../data/CoursesData.json";
 import SearchBar from "../components/SearchBar";
 import Sidebar from "../components/SideFilters";
 import "../styles/HomePage.scss";
 import InfoSection from "../components/InfoSection";
 import LoadMoreButton from "../components/LoadMoreButton";
 
-const sidebar = document.getElementById("sidebar");
-function toggleSidebar() {
-    sidebar.classList.toggle("show");
-}
 function HomePage() {
+    const [visibleCourses, setVisibleCourses] = useState(5);
+    const [recentlyAddedIds, setRecentlyAddedIds] = useState([]);
+
+    // Loads 5 more courses and temporarily flags the new ones to trigger animation
     const handleLoadMore = () => {
-        console.log("Load more clicked");
-      };   
+        setVisibleCourses(prev => {
+            const newVisible = prev + 5;
+
+            // Get IDs of newly added courses to apply animation class
+            const newCourses = CoursesData.slice(prev, newVisible).map(c => c.id);
+            setRecentlyAddedIds(newCourses);
+
+            // Clear the animation flag after the animation duration (600ms)
+            setTimeout(() => {
+                setRecentlyAddedIds([]);
+            }, 600);
+
+            return newVisible;
+        });
+    };
+    const coursesToShow = CoursesData.slice(0, visibleCourses);
+
     return (
-        <>
-            <div className="home-page-container">
-                <nav>
-                    <p>navbar</p>
-                </nav>
-                <aside>
-                    <Sidebar />
-                </aside>
-
-                <main>
-                    <div>
-                        <SearchBar />
-                    </div>
-                    <div className="results-container">
-                        <CourseCard
-                            title="Frontend Developer"
-                            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            location="Malmö"
-                            startDate="Sep 2025"
-                            csnEligible={true}
-                            status="closed"
+        <div className="home-page-container">
+            <nav>
+                <p>navbar</p>
+            </nav>
+            <aside>
+                <Sidebar />
+            </aside>
+            <main>
+                <SearchBar />
+                <div className="results-container">
+                    {coursesToShow.map((course) => (
+                        <div
+                            key={course.id}
+                            className={`course-card-wrapper ${recentlyAddedIds.includes(course.id) ? "fade-in" : ""}`}
                         >
-                        </CourseCard>
+                            <CourseCard
+                                title={course.title}
+                                description={course.description}
+                                location={course.location}
+                                startDate={course.startDate}
+                                csnEligible={course.csnEligible}
+                                status={course.status}
+                            />
+                        </div>
+                    ))}
+                    {visibleCourses < CoursesData.length && (
+                        <div className="load-more-container">
+                            <LoadMoreButton onClick={handleLoadMore} />
+                        </div>
+                    )}
+                </div>
+                <div>
+                    <InfoSection />
+                </div>
+            </main>
+            <footer>
+                <p>footer</p>
+            </footer>
+        </div>
 
-                        <CourseCard
-                            title="Frontend Developer"
-                            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            location="Malmö"
-                            startDate="Sep 2025"
-                            csnEligible={true}
-                            status="open"
-                        >
-                        </CourseCard>
-
-                        <CourseCard
-                            title="Frontend Developer"
-                            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            location="Malmö"
-                            startDate="Sep 2025"
-                            csnEligible={true}
-                            status="late"
-                        >
-                        </CourseCard>
-
-                        <CourseCard
-                            title="Frontend Developer"
-                            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            location="Malmö"
-                            startDate="Sep 2025"
-                            csnEligible={true}
-                            status="open"
-                        >
-                        </CourseCard>
-
-                        <CourseCard
-                            title="Frontend Developer"
-                            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-                            location="Malmö"
-                            startDate="Sep 2025"
-                            csnEligible={true}
-                            status="closed"
-                        >
-                        </CourseCard>
-
-                        <LoadMoreButton onClick={handleLoadMore} />
-                    </div>
-                    <div>
-                        <InfoSection />
-                    </div>
-                </main>
-                <footer>
-                    <p>footer</p>
-                </footer>
-            </div>
-        </>
     )
 }
 
