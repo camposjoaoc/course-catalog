@@ -3,9 +3,9 @@ import CourseCard from "../components/CourseCard";
 import CoursesData from "../data/CoursesData.json";
 import SearchBar from "../components/SearchBar";
 import Sidebar from "../components/SideFilters";
-import "../styles/HomePage.scss";
 import InfoSection from "../components/InfoSection";
 import LoadMoreButton from "../components/LoadMoreButton";
+import "../styles/HomePage.scss";
 
 function HomePage() {
     const [visibleCourses, setVisibleCourses] = useState(5);
