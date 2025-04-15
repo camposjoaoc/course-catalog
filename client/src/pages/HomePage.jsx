@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CourseCard from "../components/CourseCard";
 import CoursesData from "../data/CoursesData.json";
 import SearchBar from "../components/SearchBar";
@@ -10,6 +10,14 @@ import "../styles/HomePage.scss";
 function HomePage() {
     const [visibleCourses, setVisibleCourses] = useState(5);
     const [recentlyAddedIds, setRecentlyAddedIds] = useState([]);
+    const [visitedCourses, setVisitedCourses] = useState([]);
+
+    useEffect(() => {
+      const stored = localStorage.getItem("visitedCourses");
+      if (stored) {
+          setVisitedCourses(JSON.parse(stored));
+      }
+  }, []);
 
     // Loads 5 more courses and temporarily flags the new ones to trigger animation
     const handleLoadMore = () => {
@@ -46,13 +54,16 @@ function HomePage() {
                             key={course.id}
                             className={`course-card-wrapper ${recentlyAddedIds.includes(course.id) ? "fade-in" : ""}`}
                         >
-                            <CourseCard
+                           <CourseCard
+                                id={course.id}
                                 title={course.title}
                                 description={course.description}
                                 location={course.location}
                                 startDate={course.startDate}
                                 csnEligible={course.csnEligible}
                                 status={course.status}
+                                visitedCourses={visitedCourses}
+                                setVisitedCourses={setVisitedCourses}
                             />
                         </div>
                     ))}
@@ -61,6 +72,12 @@ function HomePage() {
                             <LoadMoreButton onClick={handleLoadMore} />
                         </div>
                     )}
+                    <button onClick={() => {
+                          localStorage.removeItem("visitedCourses");
+                          window.location.reload(); // Optional: refresh the page immediately
+                        }}>
+                          Reset Visited Courses
+                        </button>
                 </div>
                 <div>
                     <InfoSection />
