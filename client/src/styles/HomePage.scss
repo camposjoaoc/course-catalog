@@ -47,6 +47,19 @@ footer {
     }
 }
 
+aside {
+    grid-area: sidebar;
+  
+    .sidebar {
+      display: block;
+    }
+  
+    .mobile-filters {
+      display: none;
+    }
+  }
+  
+
 @keyframes fadeInSlide {
     from {
         opacity: 0;
@@ -85,3 +98,16 @@ footer {
             "footer";
     }
 }
+
+  
+@media screen and (max-width: 767px) {
+    aside {
+      .sidebar {
+        display: none;
+      }
+  
+      .mobile-filters {
+        display: block;
+      }
+    }
+  }

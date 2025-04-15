@@ -6,12 +6,14 @@ import Sidebar from "../components/SideFilters";
 import InfoSection from "../components/InfoSection";
 import LoadMoreButton from "../components/LoadMoreButton";
 import "../styles/HomePage.scss";
+import MobileFilters from "../components/MobileFilters";
 
 function HomePage() {
     const [visibleCourses, setVisibleCourses] = useState(5);
     const [recentlyAddedIds, setRecentlyAddedIds] = useState([]);
     const [visitedCourses, setVisitedCourses] = useState([]);
 
+    //Visited courses
     useEffect(() => {
       const stored = localStorage.getItem("visitedCourses");
       if (stored) {
@@ -44,8 +46,13 @@ function HomePage() {
                 <p>navbar</p>
             </nav>
             <aside>
-                <Sidebar />
-            </aside>
+          <div className="sidebar">
+            <Sidebar />
+          </div>
+          <div className="mobile-filters">
+            <MobileFilters />
+          </div>
+        </aside>
             <main>
                 <SearchBar />
                 <div className="results-container">
