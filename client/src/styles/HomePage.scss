@@ -82,9 +82,22 @@ aside {
             "footer";
     }
 
-    aside {
-        order: 2; /* opcional se você quiser ajustar ainda mais */
-    }
+    /*aside {
+        order: 2; //opcional se você quiser ajustar ainda mais 
+    } */
+
+    @media screen and (max-width: 1024px) {
+        aside {
+          .sidebar {
+            display: none;
+          }
+      
+          .mobile-filters {
+            display: block;
+          }
+        }
+      }
+    
 }
 
 /* Mobile styles: small screens (max-width: 767px) */
@@ -99,8 +112,7 @@ aside {
     }
 }
 
-  
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 300px) and (max-width: 767px) {
     aside {
       .sidebar {
         display: none;
@@ -111,3 +123,5 @@ aside {
       }
     }
   }
+
+  

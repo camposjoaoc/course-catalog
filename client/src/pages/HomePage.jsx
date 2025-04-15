@@ -81,7 +81,7 @@ function HomePage() {
                     )}
                     <button onClick={() => {
                           localStorage.removeItem("visitedCourses");
-                          window.location.reload(); // Optional: refresh the page immediately
+                          window.location.reload(); 
                         }}>
                           Reset Visited Courses
                         </button>

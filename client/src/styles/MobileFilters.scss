@@ -1,7 +1,11 @@
+@use "./Variables" as *;
+@use "./Global" as *;
+
 .mobile-filters {
     margin: 1rem;
+    font-family: $font-family-content;
     .toggle-button {
-      background-color: #eee;
+      background-color: #ffffff;
       border: none;
       padding: 0.6rem;
       font-weight: bold;
@@ -16,7 +20,7 @@
   
       select {
         padding: 0.4rem;
-        border: 1px solid #ccc;
+        border: 1px solid #b5d2ff;
         border-radius: 4px;
       }
     }

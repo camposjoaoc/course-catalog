@@ -22,14 +22,23 @@ const MobileFilters = ({ filters, setFilters }) => {
         <div className="filters-dropdown">
           <select onChange={e => handleChange("area", e.target.value)}>
             <option value="">Area</option>
-            <option value="frontend">Frontend</option>
-            <option value="backend">Backend</option>
+                <option value="Design">Design</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Health and care">Health and care</option>
+              <option value="Sustainability">Sustainability</option>
+              <option value="Arts and Culture">Arts and Culture</option>
           </select>
 
           <select onChange={e => handleChange("semester", e.target.value)}>
             <option value="">Semester</option>
-            <option value="spring">Spring</option>
-            <option value="fall">Fall</option>
+            <option value="spring2025">Spring 2025</option>
+            <option value="fall2025">Fall 2025</option>
+          </select>
+
+          <select onChange={e => handleChange("type", e.target.value)}>
+            <option value="">Type</option>
+            <option value="course">Course</option>
+            <option value="programme">Programme</option>
           </select>
 
         </div>
