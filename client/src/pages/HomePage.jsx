@@ -5,8 +5,9 @@ import SearchBar from "../components/SearchBar";
 import Sidebar from "../components/SideFilters";
 import InfoSection from "../components/InfoSection";
 import LoadMoreButton from "../components/LoadMoreButton";
-import "../styles/HomePage.scss";
+import Footer from "../components/Footer";
 import MobileFilters from "../components/MobileFilters";
+import "../styles/HomePage.scss";
 
 function HomePage() {
     const [visibleCourses, setVisibleCourses] = useState(5);
@@ -15,11 +16,11 @@ function HomePage() {
 
     //Visited courses
     useEffect(() => {
-      const stored = localStorage.getItem("visitedCourses");
-      if (stored) {
-          setVisitedCourses(JSON.parse(stored));
-      }
-  }, []);
+        const stored = localStorage.getItem("visitedCourses");
+        if (stored) {
+            setVisitedCourses(JSON.parse(stored));
+        }
+    }, []);
 
     // Loads 5 more courses and temporarily flags the new ones to trigger animation
     const handleLoadMore = () => {
@@ -46,13 +47,13 @@ function HomePage() {
                 <p>navbar</p>
             </nav>
             <aside>
-          <div className="sidebar">
-            <Sidebar />
-          </div>
-          <div className="mobile-filters">
-            <MobileFilters />
-          </div>
-        </aside>
+                <div className="sidebar">
+                    <Sidebar />
+                </div>
+                <div className="mobile-filters">
+                    <MobileFilters />
+                </div>
+            </aside>
             <main>
                 <SearchBar />
                 <div className="results-container">
@@ -61,7 +62,7 @@ function HomePage() {
                             key={course.id}
                             className={`course-card-wrapper ${recentlyAddedIds.includes(course.id) ? "fade-in" : ""}`}
                         >
-                           <CourseCard
+                            <CourseCard
                                 id={course.id}
                                 title={course.title}
                                 description={course.description}
@@ -80,18 +81,18 @@ function HomePage() {
                         </div>
                     )}
                     <button onClick={() => {
-                          localStorage.removeItem("visitedCourses");
-                          window.location.reload(); 
-                        }}>
-                          Reset Visited Courses
-                        </button>
+                        localStorage.removeItem("visitedCourses");
+                        window.location.reload();
+                    }}>
+                        Reset Visited Courses
+                    </button>
                 </div>
                 <div>
                     <InfoSection />
                 </div>
             </main>
             <footer>
-                <p>footer</p>
+                <Footer />
             </footer>
         </div>
 
@@ -204,4 +205,4 @@ function HomePage() {
 }
 
 export default HomePage;
-*/ 
+*/
