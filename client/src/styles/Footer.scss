@@ -2,7 +2,7 @@
 @use "./Global" as *;
 
 .footer {
-    background-color: #e6f0ff; /* tom de azul claro parecido com o da imagem */
+    background-color: $color-secondary;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
     font-size: 14px;
@@ -62,7 +62,7 @@
 }
 
 .footer-right a:hover {
-    color: #0073e6;
+    color: $color-primary;
 }
 
 /* Mobile styles: small screens (max-width: 767px) */

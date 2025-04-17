@@ -10,3 +10,9 @@ h2 {
 p, span, button {
     font-family: $font-family-content;
 }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
