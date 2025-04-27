@@ -2,189 +2,183 @@
 @use "./Global" as *;
 
 .course-page-container {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 40px;
-}
-
-/* Hero Section */
-.hero {
-  background-color: #f8faff;
-  border: 1px solid #ccc;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f8fa;
+  color: #333;
+  justify-content: center;
   text-align: center;
-  border-radius: 12px;
 
-  img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 12px;
-  }
 
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  .course-box {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
 
-    h1 {
-      font-size: 28px;
-      color: #1e2a40;
-    }
 
-    p {
-      font-size: 16px;
-      color: #555;
-    }
-
-    button {
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-
-      &:hover {
-        background-color: #0056b3;
+    .course-header {
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
       }
     }
-  }
-}
 
-/* Main Section: Course Details and Description */
-.course-main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-}
+    .course-body {
+      max-width: 800px;
+      margin: 2rem auto 0;
+      background: white;
+      color: #333;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
-/* Left Column */
-.course-left {
-  flex: 1 1 300px;
-  background-color: #007bff;
-  color: white;
-  padding: 20px;
-  border-radius: 12px;
+      .course-description {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
 
-  h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
+      .course-details {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
 
-  ul {
-    list-style: none;
-    padding: 0;
-
-    li {
-      margin-bottom: 10px;
-      font-size: 16px;
-
-      strong {
-        font-weight: bold;
+        p {
+          margin: 0.2rem 0;
+        }
       }
     }
   }
 
-  button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: white;
-    color: #007bff;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-
-    &:hover {
-      background-color: #e6f0ff;
-    }
-  }
-}
-
-/* Right Column */
-.course-right {
-  flex: 2 1 500px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
-  h2 {
-    font-size: 22px;
-    color: #1e2a40;
-  }
-
-  p, ul {
-    font-size: 16px;
-    color: #555;
-  }
-
-  ul {
-    list-style: disc;
-    padding-left: 20px;
-  }
-}
-
-/* Coordinator Section */
-.coordinator {
-  background-color: #e6f0ff;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 400px;
-
-  h3 {
-    font-size: 20px;
-    color: #1e2a40;
-    margin-bottom: 10px;
-  }
-
-  p {
-    margin: 5px 0;
-    color: #333;
-  }
-}
-
-/* Testimonials Section */
-.testimonials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-
-  h2 {
-    font-size: 24px;
-    color: #1e2a40;
-  }
-
-  .testimonial-cards {
+  .course-main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    padding: 3rem 2rem;
+    gap: 2rem;
+    background-color: #ffffff;
 
-    .testimonial-card {
-      background-color: white;
-      border: 1px solid #ccc;
-      border-radius: 12px;
-      padding: 20px;
-      width: 250px;
-      text-align: center;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    .course-left {
+      flex: 1 1 300px;
+      background: #eef3f8;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-      p {
-        color: #555;
-        font-size: 14px;
-        margin-top: 10px;
+      h2 {
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 0.8rem;
+        }
+      }
+
+      .apply-button {
+        margin-top: 1.5rem;
+        background-color: #4facfe;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #00c3ff;
+        }
+      }
+    }
+
+    .course-right {
+      flex: 2 1 600px;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+      section {
+        margin-bottom: 2rem;
+
+        h2 {
+          margin-bottom: 1rem;
+          font-size: 1.5rem;
+          color: #4facfe;
+        }
+
+        p, ul {
+          font-size: 1rem;
+          line-height: 1.6;
+        }
+
+        ul {
+          padding-left: 1.2rem;
+          list-style: disc;
+        }
+      }
+
+      .coordinator {
+        background: #eef3f8;
+        padding: 1rem;
+        border-radius: 8px;
+
+        h3 {
+          margin-bottom: 0.5rem;
+          color: #333;
+        }
+
+        p {
+          margin: 0.2rem 0;
+        }
       }
     }
   }
+
+  .testimonials {
+    background: #f1f5f9;
+    padding: 4rem 2rem;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .testimonial-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+
+      .testimonial-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        width: 250px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        h3 {
+          margin-bottom: 0.5rem;
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-style: italic;
+          color: #666;
+        }
+      }
+    }
+  }
+
 }
