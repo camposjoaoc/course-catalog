@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../styles/CoursePage.scss";
 import CoursesData from "../data/CoursesData.json";
@@ -6,37 +6,57 @@ import Footer from "../components/Footer";
 
 const CoursePage = () => {
   const { id } = useParams();
+  const [course, setCourse] = useState(null);
+
+  useEffect(() => {
+    const foundCourse = CoursesData.find(c => c.id === parseInt(id));
+    setCourse(foundCourse);
+  }, [id]);
+
+  if (!course) {
+    return (
+      <div className="course-page-container">
+        <p>Loading course details...</p>
+      </div>
+    );
+  }
 
   return (
     <div className="course-page-container">
-            <nav>
-                <p>navbar</p>
-            </nav>
-      {/* Hero Section */}
+      <nav>
+        <p>Navbar</p>
+      </nav>
+
       <section className="hero">
-        <img src="/path/to/your/course-image.jpg" alt="Course Preview" />
-        <div className="hero-content">
-          <h1>Study Frontend Development</h1>
-          <p>Learn how to become a skilled frontend developer building modern, responsive websites and applications.</p>
-          <button>Apply Here</button>
+        <div className="course-header">
+          <h1>{course.title}</h1>
+        </div>
+
+        <div className="course-body">
+          <p className="course-description">{course.description}</p>
+
+          <div className="course-details">
+            <p>Location: {course.location}</p>
+            <p>Start Date: {course.startDate}</p>
+            <p>Status: {course.status}</p>
+            {course.csnEligible && <p>CSN Eligible</p>}
+          </div>
         </div>
       </section>
 
-      {/* Main Section */}
       <div className="course-main">
-        {/* Left - Course Details */}
         <div className="course-left">
           <h2>Course Details</h2>
           <ul>
-            <li><strong>Starting date:</strong> Dec 2025</li>
-            <li><strong>Place:</strong> Sweden</li>
-            <li><strong>Internship:</strong> 10 months</li>
-            <li><strong>Duration:</strong> 2 years</li>
-            <li><strong>Language:</strong> English</li>
-            <li><strong>Degree:</strong> Higher Vocational Education</li>
-            <li><strong>Tuition:</strong> Free for EU/EEA</li>
+            <li>Starting date: Dec 2025</li>
+            <li>Place: Sweden</li>
+            <li>Internship: 10 months</li>
+            <li>Duration: 2 years</li>
+            <li>Language: English</li>
+            <li>Degree: Higher Vocational Education</li>
+            <li>Tuition: Free for EU/EEA</li>
           </ul>
-          <button>Apply Here</button>
+          <button className="apply-button">Apply Here</button>
         </div>
 
         <div className="course-right">
@@ -54,17 +74,15 @@ const CoursePage = () => {
             </ul>
           </section>
 
-          {/* Coordinator Box */}
           <div className="coordinator">
             <h3>Course Coordinator</h3>
-            <p><strong>Title:</strong> John Doe</p>
-            <p><strong>Email:</strong> johndoe@email.com</p>
-            <p><strong>Phone:</strong> +123456789</p>
+            <p>Title:John Doe</p>
+            <p>Email: johndoe@email.com</p>
+            <p>Phone: +123456789</p>
           </div>
         </div>
       </div>
 
-      {/* Testimonials */}
       <section className="testimonials">
         <h2>Students Testimonials</h2>
         <div className="testimonial-cards">
@@ -83,13 +101,14 @@ const CoursePage = () => {
         </div>
       </section>
 
-            <footer>
-                <Footer />
-            </footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };
 
 export default CoursePage;
+
 
 
