@@ -80,12 +80,6 @@ function HomePage() {
                             <LoadMoreButton onClick={handleLoadMore} />
                         </div>
                     )}
-                    <button onClick={() => {
-                        localStorage.removeItem("visitedCourses");
-                        window.location.reload();
-                    }}>
-                        Reset Visited Courses
-                    </button>
                 </div>
                 <div>
                     <InfoSection />
