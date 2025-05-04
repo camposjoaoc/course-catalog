@@ -5,11 +5,14 @@ import "./styles/App.scss";
 import "./styles/SearchBar.scss";
 import HomePage from "./pages/HomePage";
 import Sidebar from './components/SideFilters';
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import CoursePage from "./pages/CoursePage";
 
 function App() {
   return (
-    <div className="container">    
+    <div className="container"> 
+    <Navbar />   
       <BrowserRouter basename="/school-catalog">
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -17,6 +20,7 @@ function App() {
         <Route path="/course/:id" element={<CoursePage />} />
       </Routes>
     </BrowserRouter>
+      <Footer />
     </div>
 
   );

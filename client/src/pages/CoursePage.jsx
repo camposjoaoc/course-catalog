@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../styles/CoursePage.scss";
 import CoursesData from "../data/CoursesData.json";
-import Footer from "../components/Footer";
 
 const CoursePage = () => {
   const { id } = useParams();
@@ -23,9 +22,6 @@ const CoursePage = () => {
 
   return (
     <div className="course-page-container">
-      <nav>
-        <p>Navbar</p>
-      </nav>
 
       <section className="hero">
         <div className="course-header">
@@ -103,10 +99,6 @@ const CoursePage = () => {
           </div>
         </div>
       </section>
-
-      <footer>
-        <Footer />
-      </footer>
     </div>
   );
 };

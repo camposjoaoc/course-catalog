@@ -8,13 +8,11 @@
   background-color: #f7f8fa;
   color: #333;
 
-
   .course-box {
     background: #4facfe;
     color: white;
     padding: 3rem 2rem;
     text-align: center;
-
 
     .course-header {
       h1 {
@@ -111,7 +109,8 @@
           color: $color-primary;
         }
 
-        p, ul {
+        p,
+        ul {
           font-size: 1rem;
           line-height: 1.6;
         }
@@ -180,5 +179,4 @@
       }
     }
   }
-
 }

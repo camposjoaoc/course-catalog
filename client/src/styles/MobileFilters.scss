@@ -2,27 +2,26 @@
 @use "./Global" as *;
 
 .mobile-filters {
-    margin: 1rem;
-    font-family: $font-family-content;
-    .toggle-button {
-      background-color: #ffffff;
-      border: none;
-      padding: 0.6rem;
-      font-weight: bold;
-      width: 100%;
-    }
-  
-    .filters-dropdown {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      margin-top: 0.5rem;
-  
-      select {
-        padding: 0.4rem;
-        border: 1px solid #b5d2ff;
-        border-radius: 4px;
-      }
+  margin: 1rem;
+  font-family: $font-family-content;
+  .toggle-button {
+    background-color: #ffffff;
+    border: none;
+    padding: 0.6rem;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .filters-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+
+    select {
+      padding: 0.4rem;
+      border: 1px solid #b5d2ff;
+      border-radius: 4px;
     }
   }
-  
+}

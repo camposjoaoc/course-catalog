@@ -1,56 +1,53 @@
 @use "./Variables" as *;
 @use "./Global" as *;
 
-
 .sidebar {
-    color: white;
-    padding: 20px;
-    width: 250px;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-  
-    h2 {
-      margin-bottom: 20px;
+  color: white;
+  padding: 20px;
+  width: 250px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .filter-group {
+    margin-bottom: 20px;
+
+    h4 {
+      margin-bottom: 10px;
     }
-  
-    .filter-group {
-      margin-bottom: 20px;
-  
-      h4 {
-        margin-bottom: 10px;
-      }
-  
-      label {
-        display: block;
-        margin-bottom: 5px;
-        cursor: pointer;
-      }
-  
-      input[type="checkbox"] {
-        margin-right: 8px;
-      }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 8px;
     }
   }
+}
 
-  .school-info {
-    color: #ffff;
-    display: block;
-    text-align: center;
-    font-family: $font-family-heading;
+.school-info {
+  color: #ffff;
+  display: block;
+  text-align: center;
+  font-family: $font-family-heading;
 
-      img {
-        width: 150px;
-        margin: 10px;
-      }
-
+  img {
+    width: 150px;
+    margin: 10px;
   }
+}
 
-.select-side-filters{
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-  }
-  
+.select-side-filters {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}

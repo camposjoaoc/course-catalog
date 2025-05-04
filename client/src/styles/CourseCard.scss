@@ -46,6 +46,12 @@
         font-size: 14px;
         align-items: center;
     }
+    .course-status {
+        /* desktop: badge alinhado à direita */
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+    }
 }
 
 .course-action {
@@ -80,15 +86,13 @@
     }
 
     .course-content {
-        margin: 0 10px 0 10px;
+        margin: 0 10px;
         gap: 5px;
 
         .course-info-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column;
+            align-items: flex-start;
             gap: 8px;
-            flex-wrap: wrap;
         }
 
         .course-info {
@@ -100,7 +104,15 @@
             font-size: 12px;
             align-items: center;
         }
+
+        .course-status {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 8px;
+        }
     }
+
     .course-action {
         margin-bottom: 50px;
     }
