@@ -7,12 +7,14 @@ h2 {
     font-family: $font-family-heading;
 }
 
-p, span, button {
+p,
+span,
+button {
     font-family: $font-family-content;
 }
 
 select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
