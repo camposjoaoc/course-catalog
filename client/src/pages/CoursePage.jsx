@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import "../styles/CoursePage.scss";
 import CoursesData from "../data/CoursesData.json";
 
+
 const CoursePage = () => {
   const { id } = useParams();
   const [course, setCourse] = useState(null);
@@ -24,18 +25,14 @@ const CoursePage = () => {
     <div className="course-page-container">
 
       <section className="hero">
-        <div className="course-header">
-          <h1>{course.title}</h1>
-        </div>
+        <div className="course-hero-grid">
+          <div className="course-image">
+            <img src={course.image} alt={course.title} />
+          </div>
 
-        <div className="course-body">
-          <p className="course-description">{course.shortDescription}</p>
-
-          <div className="course-details">
-            <p>Location: {course.location}</p>
-            <p>Start Date: {course.startDate}</p>
-            <p>Status: {course.status}</p>
-            {course.csnEligible && <p>CSN Eligible</p>}
+          <div className="course-info">
+            <h1>{course.title}</h1>
+            <p className="course-description">{course.shortDescription}</p>
           </div>
         </div>
       </section>
@@ -44,15 +41,37 @@ const CoursePage = () => {
         <div className="course-left">
           <h2>Course Details</h2>
           <ul>
-            <li>Starting date: {course.startingDate}</li>
-            <li>Place: {course.place}</li>
-            <li>Internship: {course.internship}</li>
-            <li>Duration: {course.duration}</li>
-            <li>Language: {course.language}</li>
-            <li>Degree: {course.degree}</li>
-            <li>Tuition: {course.tuition}</li>
+            <li><strong>Starting date:</strong> {course.startingDate}</li>
+            <li><strong>Place:</strong> {course.place}</li>
+            <li><strong>Internship:</strong> {course.internship}</li>
+            <li><strong>Duration:</strong> {course.duration}</li>
+            <li><strong>Language:</strong> {course.language}</li>
+            <li><strong>Degree:</strong> {course.degree}</li>
+            <li><strong>CSN:</strong> {course.csnEligible ? 'Eligible' : 'Not eligible'}</li>
           </ul>
-          <button className="apply-button">Apply Here</button>
+
+          {course.tuition && typeof course.tuition === 'object' && (
+            <div className="tuition-section">
+              <strong>Applications & Tuition</strong>
+              <ul>
+                <li><em>Nordic applicants:</em>
+                  <ul>
+                    <li>{course.tuition.nordic.dates}</li>
+                    <li>{course.tuition.nordic.fee}</li>
+                  </ul>
+                </li>
+                <li><em>International applicants:</em>
+                  <ul>
+                    <li>{course.tuition.international.dates}</li>
+                    <li>{course.tuition.international.fee}</li>
+                    <li>{course.tuition.international.note}</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          )}
+
+          <button className="apply-button">Apply here</button>
         </div>
 
         <div className="course-right">
