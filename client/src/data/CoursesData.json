@@ -2,10 +2,10 @@
     {
         "id": 1,
         "title": "Frontend Developer",
-        "shortDescription": "Become a job-ready Frontend Developer in 2 years — with a 10-month internship in Sweden, taught in English and free for EU/EEA students.",
-        "courseDescription": "This 2-year Higher Vocational Education program in Sweden prepares you for a successful career as a Frontend Developer. The curriculum covers modern web technologies including HTML, CSS, JavaScript, React, version control (Git), responsive design, accessibility, and agile development practices. \n\nYou will gain real-world experience through a 10-month internship (LIA - Learning in a Work Environment) at a Swedish company, giving you a strong connection to the industry and improving your job prospects upon graduation.\n\nThe program is entirely taught in English and is tuition-free for EU/EEA citizens. Classes are held on campus in Malmö, providing a dynamic learning environment with close industry ties. Upon completion, you will be awarded a diploma in Higher Vocational Education, recognized across Europe.",
+        "shortDescription": "Become a job-ready Frontend Developer in 2 years \u2014 with a 10-month internship in Sweden, taught in English and free for EU/EEA students.",
+        "courseDescription": "This 2-year Higher Vocational Education program in Sweden prepares you for a successful career as a Frontend Developer. The curriculum covers modern web technologies including HTML, CSS, JavaScript, React, version control (Git), responsive design, accessibility, and agile development practices. \n\nYou will gain real-world experience through a 10-month internship (LIA - Learning in a Work Environment) at a Swedish company, giving you a strong connection to the industry and improving your job prospects upon graduation.\n\nThe program is entirely taught in English and is tuition-free for EU/EEA citizens. Classes are held on campus in Malm\u00f6, providing a dynamic learning environment with close industry ties. Upon completion, you will be awarded a diploma in Higher Vocational Education, recognized across Europe.",
         "requirements": "You must have a high school diploma or equivalent, and strong interest in web development. Some basic programming knowledge is recommended. English proficiency (equivalent to B2 level) is required.",
-        "location": "Malmö",
+        "location": "Malm\u00f6",
         "startDate": "Sep 2025",
         "startingDate": "Dec 2025",
         "place": "Sweden",
@@ -13,15 +13,26 @@
         "duration": "2 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac15,000 (EUR)",
+                "note": "Split into five semester installments"
+            }
+        },
         "csnEligible": true,
-        "status": "open"
+        "status": "open",
+        "image": "img_front_end.png"
     },
     {
         "id": 2,
         "title": "Backend Developer",
         "shortDescription": "Build scalable backend systems using Node.js and PostgreSQL in this intensive vocational program.",
-        "courseDescription": "This program focuses on backend development using Node.js, Express, and PostgreSQL. You’ll master API development, authentication, middleware, and cloud deployment. With industry projects and mentorship, you'll be prepared for a backend developer role in modern tech companies.",
+        "courseDescription": "This program focuses on backend development using Node.js, Express, and PostgreSQL. You\u2019ll master API development, authentication, middleware, and cloud deployment. With industry projects and mentorship, you'll be prepared for a backend developer role in modern tech companies.",
         "requirements": "Basic JavaScript knowledge and high school diploma. B2-level English recommended.",
         "location": "Stockholm",
         "startDate": "Oct 2025",
@@ -31,9 +42,20 @@
         "duration": "1.5 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac20,000 (EUR)",
+                "note": "Split into four semester installments"
+            }
+        },
         "csnEligible": false,
-        "status": "late"
+        "status": "late",
+        "image": "/images/course-2.jpg"
     },
     {
         "id": 3,
@@ -49,9 +71,20 @@
         "duration": "2 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac15,000 (EUR)",
+                "note": "Split into six semester installments"
+            }
+        },
         "csnEligible": true,
-        "status": "closed"
+        "status": "closed",
+        "image": "/images/course-3.jpg"
     },
     {
         "id": 4,
@@ -67,9 +100,20 @@
         "duration": "1.5 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac18,000 (EUR)",
+                "note": "Split into five semester installments"
+            }
+        },
         "csnEligible": true,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-4.jpg"
     },
     {
         "id": 5,
@@ -85,17 +129,28 @@
         "duration": "2 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac15,000 (EUR)",
+                "note": "Split into six semester installments"
+            }
+        },
         "csnEligible": false,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-5.jpg"
     },
     {
         "id": 6,
         "title": "Mobile App Development",
         "shortDescription": "Develop iOS and Android apps using React Native and Flutter in this hands-on course.",
-        "courseDescription": "You’ll learn to build cross-platform mobile apps from scratch using React Native and Flutter. Covering app architecture, UI/UX principles, and publishing to app stores. Includes project work and internship.",
+        "courseDescription": "You\u2019ll learn to build cross-platform mobile apps from scratch using React Native and Flutter. Covering app architecture, UI/UX principles, and publishing to app stores. Includes project work and internship.",
         "requirements": "Basic programming knowledge. B2 English level. Strong interest in mobile tech recommended.",
-        "location": "Malmö",
+        "location": "Malm\u00f6",
         "startDate": "Sep 2025",
         "startingDate": "Sep 2025",
         "place": "Sweden",
@@ -103,9 +158,20 @@
         "duration": "2 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac15,000 (EUR)",
+                "note": "Split into four semester installments"
+            }
+        },
         "csnEligible": true,
-        "status": "closed"
+        "status": "closed",
+        "image": "/images/course-6.jpg"
     },
     {
         "id": 7,
@@ -121,9 +187,20 @@
         "duration": "2 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac22,000 (EUR)",
+                "note": "Split into four semester installments"
+            }
+        },
         "csnEligible": true,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-7.jpg"
     },
     {
         "id": 8,
@@ -139,9 +216,20 @@
         "duration": "1.5 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac18,000 (EUR)",
+                "note": "Split into four semester installments"
+            }
+        },
         "csnEligible": false,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-8.jpg"
     },
     {
         "id": 9,
@@ -157,9 +245,20 @@
         "duration": "2 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac18,000 (EUR)",
+                "note": "Split into five semester installments"
+            }
+        },
         "csnEligible": true,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-9.jpg"
     },
     {
         "id": 10,
@@ -175,9 +274,20 @@
         "duration": "2 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac20,000 (EUR)",
+                "note": "Split into five semester installments"
+            }
+        },
         "csnEligible": false,
-        "status": "late"
+        "status": "late",
+        "image": "/images/course-10.jpg"
     },
     {
         "id": 11,
@@ -193,15 +303,26 @@
         "duration": "2 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac20,000 (EUR)",
+                "note": "Split into six semester installments"
+            }
+        },
         "csnEligible": false,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-11.jpg"
     },
     {
         "id": 12,
-        "title": "Digital Marknadsföring",
-        "shortDescription": "Digital Marknadsföring training program for hands-on vocational learning.",
-        "courseDescription": "Comprehensive training in Digital Marknadsföring, including practical projects and an internship to prepare you for the job market. Courses are held in Swedish.",
+        "title": "Digital Marknadsf\u00f6ring",
+        "shortDescription": "Digital Marknadsf\u00f6ring training program for hands-on vocational learning.",
+        "courseDescription": "Comprehensive training in Digital Marknadsf\u00f6ring, including practical projects and an internship to prepare you for the job market. Courses are held in Swedish.",
         "requirements": "High school diploma or equivalent. Swedish proficiency required.",
         "location": "Sweden",
         "startDate": "Sep 2025",
@@ -211,9 +332,20 @@
         "duration": "2 years",
         "language": "Swedish",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac20,000 (EUR)",
+                "note": "Split into five semester installments"
+            }
+        },
         "csnEligible": true,
-        "status": "closed"
+        "status": "closed",
+        "image": "/images/course-12.jpg"
     },
     {
         "id": 13,
@@ -229,9 +361,20 @@
         "duration": "2 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac15,000 (EUR)",
+                "note": "Split into six semester installments"
+            }
+        },
         "csnEligible": false,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-13.jpg"
     },
     {
         "id": 14,
@@ -247,9 +390,20 @@
         "duration": "2 years",
         "language": "Swedish",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac18,000 (EUR)",
+                "note": "Split into five semester installments"
+            }
+        },
         "csnEligible": true,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-14.jpg"
     },
     {
         "id": 15,
@@ -265,9 +419,20 @@
         "duration": "2 years",
         "language": "Swedish",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac15,000 (EUR)",
+                "note": "Split into six semester installments"
+            }
+        },
         "csnEligible": false,
-        "status": "closed"
+        "status": "closed",
+        "image": "/images/course-15.jpg"
     },
     {
         "id": 16,
@@ -283,15 +448,26 @@
         "duration": "2 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac15,000 (EUR)",
+                "note": "Split into four semester installments"
+            }
+        },
         "csnEligible": true,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-16.jpg"
     },
     {
         "id": 17,
-        "title": "Cyberförsvar och Säkerhet",
-        "shortDescription": "Cyberförsvar och Säkerhet training program for hands-on vocational learning.",
-        "courseDescription": "Comprehensive training in Cyberförsvar och Säkerhet, including practical projects and an internship to prepare you for the job market. Courses are held in Swedish.",
+        "title": "Cyberf\u00f6rsvar och S\u00e4kerhet",
+        "shortDescription": "Cyberf\u00f6rsvar och S\u00e4kerhet training program for hands-on vocational learning.",
+        "courseDescription": "Comprehensive training in Cyberf\u00f6rsvar och S\u00e4kerhet, including practical projects and an internship to prepare you for the job market. Courses are held in Swedish.",
         "requirements": "High school diploma or equivalent. Swedish proficiency required.",
         "location": "Sweden",
         "startDate": "Sep 2025",
@@ -301,9 +477,20 @@
         "duration": "2 years",
         "language": "Swedish",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac22,000 (EUR)",
+                "note": "Split into four semester installments"
+            }
+        },
         "csnEligible": false,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-17.jpg"
     },
     {
         "id": 18,
@@ -319,9 +506,20 @@
         "duration": "2 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac18,000 (EUR)",
+                "note": "Split into six semester installments"
+            }
+        },
         "csnEligible": true,
-        "status": "closed"
+        "status": "closed",
+        "image": "/images/course-18.jpg"
     },
     {
         "id": 19,
@@ -337,9 +535,20 @@
         "duration": "2 years",
         "language": "Swedish",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac20,000 (EUR)",
+                "note": "Split into five semester installments"
+            }
+        },
         "csnEligible": false,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-19.jpg"
     },
     {
         "id": 20,
@@ -355,9 +564,20 @@
         "duration": "2 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac18,000 (EUR)",
+                "note": "Split into six semester installments"
+            }
+        },
         "csnEligible": true,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-20.jpg"
     },
     {
         "id": 21,
@@ -373,9 +593,20 @@
         "duration": "2 years",
         "language": "Swedish",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac20,000 (EUR)",
+                "note": "Split into five semester installments"
+            }
+        },
         "csnEligible": false,
-        "status": "closed"
+        "status": "closed",
+        "image": "/images/course-21.jpg"
     },
     {
         "id": 22,
@@ -391,9 +622,20 @@
         "duration": "2 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac22,000 (EUR)",
+                "note": "Split into four semester installments"
+            }
+        },
         "csnEligible": true,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-22.jpg"
     },
     {
         "id": 23,
@@ -409,9 +651,20 @@
         "duration": "2 years",
         "language": "Swedish",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac15,000 (EUR)",
+                "note": "Split into six semester installments"
+            }
+        },
         "csnEligible": false,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-23.jpg"
     },
     {
         "id": 24,
@@ -427,9 +680,20 @@
         "duration": "2 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac18,000 (EUR)",
+                "note": "Split into four semester installments"
+            }
+        },
         "csnEligible": true,
-        "status": "closed"
+        "status": "closed",
+        "image": "/images/course-24.jpg"
     },
     {
         "id": 25,
@@ -445,15 +709,26 @@
         "duration": "2 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac20,000 (EUR)",
+                "note": "Split into five semester installments"
+            }
+        },
         "csnEligible": false,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-25.jpg"
     },
     {
         "id": 26,
-        "title": "IT-säkerhetsspecialist",
-        "shortDescription": "IT-säkerhetsspecialist training program for hands-on vocational learning.",
-        "courseDescription": "Comprehensive training in IT-säkerhetsspecialist, including practical projects and an internship to prepare you for the job market. Courses are held in Swedish.",
+        "title": "IT-s\u00e4kerhetsspecialist",
+        "shortDescription": "IT-s\u00e4kerhetsspecialist training program for hands-on vocational learning.",
+        "courseDescription": "Comprehensive training in IT-s\u00e4kerhetsspecialist, including practical projects and an internship to prepare you for the job market. Courses are held in Swedish.",
         "requirements": "High school diploma or equivalent. Swedish proficiency required.",
         "location": "Sweden",
         "startDate": "Sep 2025",
@@ -463,9 +738,20 @@
         "duration": "2 years",
         "language": "Swedish",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac18,000 (EUR)",
+                "note": "Split into six semester installments"
+            }
+        },
         "csnEligible": true,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-26.jpg"
     },
     {
         "id": 27,
@@ -481,9 +767,20 @@
         "duration": "2 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac22,000 (EUR)",
+                "note": "Split into six semester installments"
+            }
+        },
         "csnEligible": false,
-        "status": "closed"
+        "status": "closed",
+        "image": "/images/course-27.jpg"
     },
     {
         "id": 28,
@@ -499,9 +796,20 @@
         "duration": "2 years",
         "language": "Swedish",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac20,000 (EUR)",
+                "note": "Split into five semester installments"
+            }
+        },
         "csnEligible": true,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-28.jpg"
     },
     {
         "id": 29,
@@ -517,9 +825,20 @@
         "duration": "2 years",
         "language": "English",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac15,000 (EUR)",
+                "note": "Split into six semester installments"
+            }
+        },
         "csnEligible": false,
-        "status": "open"
+        "status": "open",
+        "image": "/images/course-29.jpg"
     },
     {
         "id": 30,
@@ -535,8 +854,19 @@
         "duration": "2 years",
         "language": "Swedish",
         "degree": "Higher Vocational Education",
-        "tuition": "Free for EU/EEA",
+        "tuition": {
+            "nordic": {
+                "dates": "Feb 5 \u2013 May 12, 2025",
+                "fee": "No tuition fee (YH \u2013 government-funded)"
+            },
+            "international": {
+                "dates": "Jan 7 \u2013 Apr 2, 2025",
+                "fee": "\u20ac20,000 (EUR)",
+                "note": "Split into five semester installments"
+            }
+        },
         "csnEligible": true,
-        "status": "closed"
+        "status": "closed",
+        "image": "/images/course-30.jpg"
     }
 ]
