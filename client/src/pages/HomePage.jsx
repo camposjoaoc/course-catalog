@@ -14,17 +14,17 @@ function HomePage() {
   const [visitedCourses, setVisitedCourses] = useState([]);
 
   //Visited courses
-useEffect(() => {
-  const stored = JSON.parse(localStorage.getItem("visitedCourses")) || [];
-  const now = Date.now();
-  const THIRTY_MINUTES = 30 * 60 * 1000;
+  useEffect(() => {
+    const stored = JSON.parse(localStorage.getItem("visitedCourses")) || [];
+    const now = Date.now();
+    const CACHE_EXPIRATION_TIME = 30 * 60 * 1000;
 
-  const freshIds = stored
-    .filter(item => now - item.timestamp < THIRTY_MINUTES)
-    .map(item => item.id);
+    const freshIds = stored
+      .filter(item => now - item.timestamp < CACHE_EXPIRATION_TIME)
+      .map(item => item.id);
 
-  setVisitedCourses(freshIds);
-}, []);
+    setVisitedCourses(freshIds);
+  }, []);
 
   // Loads 5 more courses and temporarily flags the new ones to trigger animation
   const handleLoadMore = () => {
