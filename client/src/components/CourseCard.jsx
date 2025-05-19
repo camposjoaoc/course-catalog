@@ -18,19 +18,9 @@ function CourseCard({
 }) {
   const visited = visitedCourses.includes(id);
 
-  const handleClick = () => {
-    if (!visited) {
-      const updated = [...visitedCourses, id];
-      setVisitedCourses(updated);
-
-      setTimeout(() => {
-        setVisitedCourses(prev => prev.filter(courseId => courseId !== id));
-      }, 10 * 1000); 
-    }
-  };
 
   return (
-    <div className={`course-card ${visited ? "visited" : ""}`} onClick={handleClick}>
+    <div className={`course-card ${visited ? "visited" : ""}`}>
       <div className="course-content">
         <h2 className="course-title">
           {title}
