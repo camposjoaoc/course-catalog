@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faCalendarDays, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import GoToCourseBtn from "../components/GoToCourseBtn";
@@ -22,7 +22,10 @@ function CourseCard({
     if (!visited) {
       const updated = [...visitedCourses, id];
       setVisitedCourses(updated);
-      localStorage.setItem("visitedCourses", JSON.stringify(updated));
+
+      setTimeout(() => {
+        setVisitedCourses(prev => prev.filter(courseId => courseId !== id));
+      }, 10 * 1000); 
     }
   };
 
@@ -53,4 +56,5 @@ function CourseCard({
 }
 
 export default CourseCard;
+
 
