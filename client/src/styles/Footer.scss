@@ -2,6 +2,25 @@
 @use "./Global" as *;
 
 .footer {
+    width: 100vw;
+    min-width: 100%;
+    left: 0;
+    right: 0;
+    position: relative;
+    box-sizing: border-box;
+    background: $color-secondary; // ou a cor que preferir
+
+    // Centraliza o conteúdo interno
+    .footer-top,
+    .footer-bottom {
+        margin: 0 auto;
+        max-width: 1600px;
+        width: 100%;
+        padding: 0 2rem;
+    }
+}
+
+.footer {
     background-color: $color-secondary;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
@@ -68,12 +87,24 @@
 /* Mobile styles: small screens (max-width: 767px) */
 @media screen and (max-width: 767px) {
     .footer {
-        padding: 20px 10px;
+        padding: 20px 0;
+        width: 100vw;
+        min-width: 0;
+    }
+
+    .footer-top,
+    .footer-bottom {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
     }
 
     .footer-top {
+        display: flex;
         flex-direction: row;
         align-items: center;
+        gap: 10px;
     }
 
     .footer-column {

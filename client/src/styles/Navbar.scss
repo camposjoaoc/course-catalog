@@ -1,4 +1,24 @@
 @use "./Variables" as *;
+@use "./Global" as *;
+
+header.navbar {
+    width: 100vw;
+    min-width: 100%;
+    left: 0;
+    right: 0;
+    position: relative;
+    box-sizing: border-box;
+
+    .navbar-container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+}
 
 header {
     display: flex;
@@ -9,12 +29,14 @@ header {
 
     .logo {
         color: black;
+        font-family: $font-family-content;
     }
 
     .nav-links {
         display: flex;
         align-items: center;
         gap: 1rem;
+        font-family: $font-family-content;
 
         a {
             color: black;
@@ -60,11 +82,20 @@ header {
             z-index: 10;
 
             .nav-close-btn {
-                align-self: flex-end;
+                position: absolute;
+                top: 1.5rem;
+                right: 1.5rem;
+                display: block;
+                background: none;
+                border: none;
+                font-size: 2rem;
+                color: black;
+                cursor: pointer;
+                z-index: 20;
             }
         }
 
-        .responsive_nav {
+        .nav-links.responsive_nav {
             right: 0;
         }
 

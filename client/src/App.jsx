@@ -11,16 +11,18 @@ import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
     <BrowserRouter basename="/school-catalog">
-      <ScrollToTop /> 
+      <ScrollToTop />
+
+      <Navbar />
       <div className="container">
-        <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/course/:id" element={<CoursePage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-        <Footer />
       </div>
+      <Footer />
+
     </BrowserRouter>
   );
 }

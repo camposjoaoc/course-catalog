@@ -14,28 +14,30 @@ const Navbar = () => {
 
     return (
         <header className="navbar">
-            <h2 className="logo">LOGO</h2>
-            <nav ref={navRef} className="nav-links">
-                <a href="#">About Us</a>
-                <a href="#">Work with us</a>
-                <a href="#">Contact</a>
-                <button className="auth-btn"><a href="#">Log in</a></button>
-                <button className="auth-btn"><a href="#">Sign up</a></button>
+            <div className="navbar-container">
+                <h2 className="logo">School X</h2>
+                <nav ref={navRef} className="nav-links">
+                    <a href="#">About Us</a>
+                    <a href="#">Work with us</a>
+                    <a href="#">Contact</a>
+                    <button className="auth-btn"><a href="#">Log in</a></button>
+                    <button className="auth-btn"><a href="#">Sign up</a></button>
+                    <button
+                        className="nav-btn nav-close-btn"
+                        onClick={toggleNavbar}
+                        aria-label="Fechar menu"
+                    >
+                        <FaTimes />
+                    </button>
+                </nav>
                 <button
-                    className="nav-btn nav-close-btn"
+                    className="nav-btn"
                     onClick={toggleNavbar}
-                    aria-label="Fechar menu"
+                    aria-label="Abrir menu"
                 >
-                    <FaTimes />
+                    <FaBars />
                 </button>
-            </nav>
-            <button
-                className="nav-btn"
-                onClick={toggleNavbar}
-                aria-label="Abrir menu"
-            >
-                <FaBars />
-            </button>
+            </div>
         </header>
     );
 };

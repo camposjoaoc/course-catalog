@@ -161,14 +161,16 @@
   }
 
   .testimonials {
-    background: #f1f5f9;
+    background: $color-secondary;
     padding: 4rem 2rem;
     text-align: center;
 
     h2 {
       margin-bottom: 2rem;
-      font-size: 2rem;
-      color: #333;
+      font-size: 2.5rem;
+      color: #111;
+      font-weight: bold;
+      font-family: $font-family-heading;
     }
 
     .testimonial-cards {
@@ -178,27 +180,78 @@
       justify-content: center;
 
       .testimonial-card {
-        background: white;
-        padding: 2rem;
-        border-radius: 10px;
-        width: 250px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        background: #fff;
+        width: 340px;
+        min-height: 260px;
+        border: 2px solid #111;
+        border-radius: 56px;
+        box-shadow: 8px 8px 0 #111;
+        padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
         transition: transform 0.3s;
+        font-family: $font-family-content;
 
         &:hover {
           transform: translateY(-5px);
         }
 
-        h3 {
-          margin-bottom: 0.5rem;
-          font-size: 1.2rem;
+        .testimonial-header {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 1rem;
+
+          .testimonial-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: $color-primary;
+            margin-right: 1rem;
+            flex-shrink: 0;
+          }
+
+          .testimonial-name-year {
+            text-align: left;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #111;
+            line-height: 1.1;
+            font-family: $font-family-heading;
+          }
         }
 
-        p {
-          font-style: italic;
-          color: #666;
+        hr {
+          width: 100%;
+          border: none;
+          border-top: 2px solid #444;
+          margin: 0.8rem 0;
+        }
+
+        .testimonial-text {
+          color: #111;
+          font-size: 1rem;
+          font-style: normal;
+          text-align: left;
+          line-height: 1.5;
+          font-family: $font-family-content;
         }
       }
+    }
+  }
+
+  @media (max-width: 900px) {
+    .testimonials .testimonial-cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .testimonials .testimonial-card {
+      width: 95vw;
+      min-width: 0;
+      max-width: 340px;
     }
   }
 }

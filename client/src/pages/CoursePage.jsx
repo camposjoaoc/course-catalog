@@ -105,16 +105,34 @@ const CoursePage = () => {
         <h2>Students Testimonials</h2>
         <div className="testimonial-cards">
           <div className="testimonial-card">
-            <h3>Student A</h3>
-            <p>"This course helped me land my first developer job!"</p>
+            <div className="testimonial-header">
+              <div className="testimonial-avatar"></div>
+              <div className="testimonial-name-year">Random Name<br />Year</div>
+            </div>
+            <hr />
+            <div className="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </div>
           </div>
           <div className="testimonial-card">
-            <h3>Student B</h3>
-            <p>"The teachers are amazing and the projects are real-world."</p>
+            <div className="testimonial-header">
+              <div className="testimonial-avatar"></div>
+              <div className="testimonial-name-year">Random Name<br />Year</div>
+            </div>
+            <hr />
+            <div className="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </div>
           </div>
           <div className="testimonial-card">
-            <h3>Student C</h3>
-            <p>"Highly recommend it to anyone wanting to start coding."</p>
+            <div className="testimonial-header">
+              <div className="testimonial-avatar"></div>
+              <div className="testimonial-name-year">Random Name<br />Year</div>
+            </div>
+            <hr />
+            <div className="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </div>
           </div>
         </div>
       </section>

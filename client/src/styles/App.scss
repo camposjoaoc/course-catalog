@@ -8,9 +8,21 @@
   min-height: 100vh;
 }
 
+/* Centraliza só o conteúdo principal */
 .container {
-  margin : 0 auto;
+  margin: 0 auto;
   width: 100%;
   max-width: 1600px;
   height: auto;
+}
+
+/* Garante que header e footer ocupam toda a largura */
+header,
+footer {
+  width: 100vw;
+  min-width: 100%;
+  left: 0;
+  right: 0;
+  position: relative;
+  box-sizing: border-box;
 }
