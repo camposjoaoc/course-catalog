@@ -26,16 +26,16 @@ useEffect(() => {
   setVisitedCourses(freshIds);
 }, []);
 
-  // Loads 5 more courses and temporarily flags the new ones to trigger animation
+  // Loads 5 more courses
   const handleLoadMore = () => {
     setVisibleCourses(prev => {
       const newVisible = prev + 5;
 
-      // Get IDs of newly added courses to apply animation class
+      // Get IDs of newly added courses 
       const newCourses = CoursesData.slice(prev, newVisible).map(c => c.id);
       setRecentlyAddedIds(newCourses);
 
-      // Clear the animation flag after the animation duration (600ms)
+      // Clear the animation
       setTimeout(() => {
         setRecentlyAddedIds([]);
       }, 600);

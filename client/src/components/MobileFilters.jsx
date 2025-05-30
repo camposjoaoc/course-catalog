@@ -28,6 +28,19 @@ const MobileFilters = ({ filters, setFilters }) => {
               <option value="Sustainability">Sustainability</option>
               <option value="Arts and Culture">Arts and Culture</option>
           </select>
+          
+          <select onChange={e => handleChange("studyform", e.target.value)}>
+            <option value="">Study form</option>
+            <option value="remote">Remote</option>
+            <option value="campus">Campus</option>
+            <option value="hybrid">Hybrid</option>
+          </select>
+       
+          <select onChange={e => handleChange("type", e.target.value)}>
+            <option value="">Type</option>
+            <option value="course">Course</option>
+            <option value="programme">Programme</option>
+          </select>
 
           <select onChange={e => handleChange("semester", e.target.value)}>
             <option value="">Semester</option>
@@ -35,10 +48,23 @@ const MobileFilters = ({ filters, setFilters }) => {
             <option value="fall2025">Fall 2025</option>
           </select>
 
-          <select onChange={e => handleChange("type", e.target.value)}>
-            <option value="">Type</option>
-            <option value="course">Course</option>
-            <option value="programme">Programme</option>
+          <select onChange={e => handleChange("level", e.target.value)}>
+            <option value="">Level</option>
+            <option value="bachelor">Bachelor</option>
+            <option value="master">Master</option>
+            <option value="specialization">Specialization</option>
+          </select>
+
+          <select onChange={e => handleChange("certificate", e.target.value)}>
+            <option value="">Certificate</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+
+              <select onChange={e => handleChange("language", e.target.value)}>
+            <option value="">Language</option>
+            <option value="swedish">Swedish</option>
+            <option value="english">English</option>
           </select>
 
         </div>
