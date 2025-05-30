@@ -1,43 +1,34 @@
 // src/components/Navbar.jsx
-import { useRef } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import '../styles/Navbar.scss';
+import React, { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import "../styles/NavBar.scss";
 
-const Navbar = () => {
-    const navRef = useRef(null);
+function NavBar() {
+  const navRef = useRef();
 
-    const toggleNavbar = () => {
-        if (navRef.current) {
-            navRef.current.classList.toggle('responsive_nav');
-        }
-    };
+  const toggleNav = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
 
-    return (
-        <header className="navbar">
-            <h2 className="logo">LOGO</h2>
-            <nav ref={navRef} className="nav-links">
-                <a href="#">About Us</a>
-                <a href="#">Work with us</a>
-                <a href="#">Contact</a>
-                <button className="auth-btn"><a href="#">Log in</a></button>
-                <button className="auth-btn"><a href="#">Sign up</a></button>
-                <button
-                    className="nav-btn nav-close-btn"
-                    onClick={toggleNavbar}
-                    aria-label="Fechar menu"
-                >
-                    <FaTimes />
-                </button>
-            </nav>
-            <button
-                className="nav-btn"
-                onClick={toggleNavbar}
-                aria-label="Abrir menu"
-            >
-                <FaBars />
-            </button>
-        </header>
-    );
-};
+  return (
+    <header>
+      <div className="logo">MySite</div>
 
-export default Navbar;
+      <nav ref={navRef} className="nav-links">
+        <button className="nav-close-btn" onClick={toggleNav}>
+          <FaTimes />
+        </button>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button className="auth-btn">Log in</button>
+      </nav>
+
+      <button className="nav-btn" onClick={toggleNav}>
+        <FaBars />
+      </button>
+    </header>
+  );
+}
+
+export default NavBar;

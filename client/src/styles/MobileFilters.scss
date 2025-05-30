@@ -5,23 +5,47 @@
   margin: 1rem;
   font-family: $font-family-content;
   .toggle-button {
-    background-color: #ffffff;
+    background-color: #dfefff;
     border: none;
     padding: 0.6rem;
     font-weight: bold;
     width: 100%;
   }
 
-  .filters-dropdown {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
+.filters-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
 
-    select {
-      padding: 0.4rem;
-      border: 1px solid #b5d2ff;
-      border-radius: 4px;
+  select {
+    padding: 0.5rem 1rem;
+    border: 1px solid #b0c4de;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-family: $font-family-content;
+    font-size: 1rem;
+    color: #333;
+
+    appearance: none; // removes native arrow
+    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: #0077cc;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: #0077cc;
+      box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.2);
     }
   }
+}
+
 }
