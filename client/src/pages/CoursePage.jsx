@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "../styles/CoursePage.scss";
 import CoursesData from "../data/CoursesData.json";
 
 
 const CoursePage = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [course, setCourse] = useState(null);
 
   useEffect(() => {
@@ -26,7 +27,9 @@ const CoursePage = () => {
 
       <section className="hero">
         <div className="course-hero-grid">
+          
           <div className="course-image">
+            <button className="back-button" onClick={() => navigate("/")}>Back</button>
             <img src={course.image} alt={course.title} />
           </div>
 
