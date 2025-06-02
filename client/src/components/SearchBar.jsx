@@ -1,13 +1,13 @@
-
 import React, { useState } from "react";
 import "../styles/searchBar.scss"; 
 
 const SearchBar = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");
+  const [noResults, setNoResults] = useState(false);
+  const [hasSearched, setHasSearched] = useState(false);
 
- 
-  const locations = ["Malmö", "Stockholm", "Gothenburg", "Uppsala", "Jönköping"];
+  const locations = ["Online", "Malmö", "Stockholm", "Gothenburg", "Uppsala", "Jönköping"];
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
@@ -19,38 +19,65 @@ const SearchBar = ({ onSearch }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onSearch(searchTerm, selectedLocation); 
+    setHasSearched(true);
+    const result = onSearch(searchTerm, selectedLocation);
+    if (Array.isArray(result) && result.length === 0) {
+      setNoResults(true);
+    } else {
+      setNoResults(false);
+    }
+  };
+
+  const handleReset = () => {
+    setSearchTerm("");
+    setSelectedLocation("");
+    setNoResults(false);
+    setHasSearched(false);
+    onSearch("", "");
   };
 
   return (
     <>
-    <div>
+      <div>
         <h1>Search for courses and programmes</h1>
-    </div>
-    <form className="search-bar" onSubmit={handleSubmit}>
-      <input
-        type="text"
-        className="search-input"
-        value={searchTerm}
-        onChange={handleSearchChange}
-        placeholder="Search..."
-      />
-      <select
-        className="location-select"
-        value={selectedLocation}
-        onChange={handleLocationChange}
-      >
-        <option value="">Select Location</option>
-        {locations.map((location, index) => (
-          <option key={index} value={location}>
-            {location}
-          </option>
-        ))}
-      </select>
-    </form>
-    <div className="btn-container"> 
-      <button type="submit" className="search-button">Search</button>
-    </div>
+      </div>
+      <form className="search-bar" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          className="search-input"
+          value={searchTerm}
+          onChange={handleSearchChange}
+          placeholder="Search courses..."
+        />
+        <select
+          className="location-select"
+          value={selectedLocation}
+          onChange={handleLocationChange}
+        >
+          <option value="">Select Location</option>
+          {locations.map((location, index) => (
+            <option key={index} value={location}>
+              {location}
+            </option>
+          ))}
+        </select>
+        <button type="submit" className="search-button">Search</button>
+        {hasSearched && (
+          <button
+            type="button"
+            className="clear-button"
+            onClick={handleReset}
+            aria-label="Clear search"
+          >
+            X Clear search
+          </button>
+        )}
+      </form>
+      {noResults && (
+        <div className="no-results-message">
+          No courses found. Please try a different search term or location.
+        </div>
+      )}
     </>
   );
 };

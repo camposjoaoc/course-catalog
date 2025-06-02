@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "../styles/CoursePage.scss";
 import CoursesData from "../data/CoursesData.json";
 
 
 const CoursePage = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [course, setCourse] = useState(null);
 
   useEffect(() => {
@@ -26,7 +27,9 @@ const CoursePage = () => {
 
       <section className="hero">
         <div className="course-hero-grid">
+          
           <div className="course-image">
+            <button className="back-button" onClick={() => navigate("/")}>Back</button>
             <img src={course.image} alt={course.title} />
           </div>
 
@@ -105,16 +108,34 @@ const CoursePage = () => {
         <h2>Students Testimonials</h2>
         <div className="testimonial-cards">
           <div className="testimonial-card">
-            <h3>Student A</h3>
-            <p>"This course helped me land my first developer job!"</p>
+            <div className="testimonial-header">
+              <div className="testimonial-avatar"></div>
+              <div className="testimonial-name-year">Random Name<br />Year</div>
+            </div>
+            <hr />
+            <div className="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </div>
           </div>
           <div className="testimonial-card">
-            <h3>Student B</h3>
-            <p>"The teachers are amazing and the projects are real-world."</p>
+            <div className="testimonial-header">
+              <div className="testimonial-avatar"></div>
+              <div className="testimonial-name-year">Random Name<br />Year</div>
+            </div>
+            <hr />
+            <div className="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </div>
           </div>
           <div className="testimonial-card">
-            <h3>Student C</h3>
-            <p>"Highly recommend it to anyone wanting to start coding."</p>
+            <div className="testimonial-header">
+              <div className="testimonial-avatar"></div>
+              <div className="testimonial-name-year">Random Name<br />Year</div>
+            </div>
+            <hr />
+            <div className="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </div>
           </div>
         </div>
       </section>

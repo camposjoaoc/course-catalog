@@ -1,4 +1,4 @@
-// src/components/Navbar.jsx
+// src/components/NavBar.jsx
 import React, { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../styles/NavBar.scss";
@@ -11,24 +11,39 @@ function NavBar() {
   };
 
   return (
-    <header>
-      <div className="logo">MySite</div>
+    <header className="navbar">
+      <div className="navbar-container">
+        <h2 className="logo">School X</h2>
 
-      <nav ref={navRef} className="nav-links">
-        <button className="nav-close-btn" onClick={toggleNav}>
-          <FaTimes />
+        <nav ref={navRef} className="nav-links">
+          <a href="#courses">Courses</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <button className="auth-btn">Log in</button>
+          <button className="auth-btn">Sign up</button>
+
+          {/* Close button (X) */}
+          <button
+            className="nav-btn nav-close-btn"
+            onClick={toggleNav}
+            aria-label="Close menu"
+          >
+            <FaTimes />
+          </button>
+        </nav>
+
+        {/* Burger icon */}
+        <button
+          className="nav-btn"
+          onClick={toggleNav}
+          aria-label="Open menu"
+        >
+          <FaBars />
         </button>
-        <a href="#courses">Courses</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <button className="auth-btn">Log in</button>
-      </nav>
-
-      <button className="nav-btn" onClick={toggleNav}>
-        <FaBars />
-      </button>
+      </div>
     </header>
   );
 }
 
 export default NavBar;
+

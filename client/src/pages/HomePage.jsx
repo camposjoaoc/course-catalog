@@ -12,30 +12,30 @@ function HomePage() {
   const [visibleCourses, setVisibleCourses] = useState(5);
   const [recentlyAddedIds, setRecentlyAddedIds] = useState([]);
   const [visitedCourses, setVisitedCourses] = useState([]);
+  const [filteredCourses, setFilteredCourses] = useState(CoursesData);
 
   //Visited courses
-useEffect(() => {
-  const stored = JSON.parse(localStorage.getItem("visitedCourses")) || [];
-  const now = Date.now();
-  const THIRTY_MINUTES = 30 * 60 * 1000;
+  useEffect(() => {
+    const stored = JSON.parse(localStorage.getItem("visitedCourses")) || [];
+    const now = Date.now();
+    const CACHE_EXPIRATION_TIME = 30 * 60 * 1000;
 
-  const freshIds = stored
-    .filter(item => now - item.timestamp < THIRTY_MINUTES)
-    .map(item => item.id);
+    const freshIds = stored
+      .filter(item => now - item.timestamp < CACHE_EXPIRATION_TIME)
+      .map(item => item.id);
 
-  setVisitedCourses(freshIds);
-}, []);
+    setVisitedCourses(freshIds);
+  }, []);
 
-  // Loads 5 more courses
+  // Loads 5 more courses and temporarily flags the new ones to trigger animation
   const handleLoadMore = () => {
     setVisibleCourses(prev => {
       const newVisible = prev + 5;
 
       // Get IDs of newly added courses 
-      const newCourses = CoursesData.slice(prev, newVisible).map(c => c.id);
+      const newCourses = filteredCourses.slice(prev, newVisible).map(c => c.id);
       setRecentlyAddedIds(newCourses);
 
-      // Clear the animation
       setTimeout(() => {
         setRecentlyAddedIds([]);
       }, 600);
@@ -43,7 +43,29 @@ useEffect(() => {
       return newVisible;
     });
   };
-  const coursesToShow = CoursesData.slice(0, visibleCourses);
+
+  // Handles search and location filtering
+  const handleSearch = (searchTerm, selectedLocation) => {
+    let filtered = CoursesData;
+
+    if (searchTerm) {
+      filtered = filtered.filter(course =>
+        course.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        (course.shortDescription && course.shortDescription.toLowerCase().includes(searchTerm.toLowerCase()))
+      );
+    }
+
+    if (selectedLocation) {
+      filtered = filtered.filter(course =>
+        course.location && course.location === selectedLocation
+      );
+    }
+
+    setFilteredCourses(filtered);
+    setVisibleCourses(5);
+  };
+
+  const coursesToShow = filteredCourses.slice(0, visibleCourses);
 
   return (
     <div className="home-page-container">
@@ -56,27 +78,34 @@ useEffect(() => {
         </div>
       </aside>
       <main>
-        <SearchBar />
+        <SearchBar onSearch={handleSearch} />
         <div className="results-container">
-          {coursesToShow.map((course) => (
-            <div
-              key={course.id}
-              className={`course-card-wrapper ${recentlyAddedIds.includes(course.id) ? "fade-in" : ""}`}
-            >
-              <CourseCard
-                id={course.id}
-                title={course.title}
-                description={course.shortDescription}
-                location={course.location}
-                startDate={course.startDate}
-                csnEligible={course.csnEligible}
-                status={course.status}
-                visitedCourses={visitedCourses}
-                setVisitedCourses={setVisitedCourses}
-              />
+          {coursesToShow.length === 0 ? (
+            <div className="no-results-message">
+              <p className="no-results-message">No courses found</p>
+              <p className="no-results-message">Please try a different search term or location.</p>
             </div>
-          ))}
-          {visibleCourses < CoursesData.length && (
+          ) : (
+            coursesToShow.map((course) => (
+              <div
+                key={course.id}
+                className={`course-card-wrapper ${recentlyAddedIds.includes(course.id) ? "fade-in" : ""}`}
+              >
+                <CourseCard
+                  id={course.id}
+                  title={course.title}
+                  description={course.shortDescription}
+                  location={course.location}
+                  startDate={course.startDate}
+                  csnEligible={course.csnEligible}
+                  status={course.status}
+                  visitedCourses={visitedCourses}
+                  setVisitedCourses={setVisitedCourses}
+                />
+              </div>
+            ))
+          )}
+          {visibleCourses < filteredCourses.length && (
             <div className="load-more-container">
               <LoadMoreButton onClick={handleLoadMore} />
             </div>
