@@ -2,71 +2,71 @@
 @use "./Global" as *;
 
 .course-card {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 10px;
 
-    width: 755px;
-    height: 180px;
+  width: 755px;
+  height: 180px;
 
-    gap: 16px;
-    border-radius: 45px;
-    border: 2px solid #000000;
-    box-shadow: 1px 5px 0 #000;
-    overflow: auto;
+  gap: 16px;
+  border-radius: 45px;
+  border: 2px solid #000000;
+  box-shadow: 1px 5px 0 #000;
+  overflow: auto;
 }
 .course-content {
-    margin: 0 20px 0 20px;
+  margin: 0 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .course-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000000;
+    margin: 0 0 5px 0;
+  }
+
+  .course-info-row {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
 
-    .course-title {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #000000;
-        margin: 0 0 5px 0;
-    }
-
-    .course-info-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 16px;
-        flex-wrap: wrap;
-    }
-
-    .course-info {
-        display: flex;
-        margin: 0;
-        flex-wrap: wrap;
-        gap: 20px;
-        color: #6b7280;
-        font-size: 14px;
-        align-items: center;
-    }
-    .course-status {
-        /* desktop: badge alinhado à direita */
-        display: flex;
-        justify-content: flex-end;
-        flex: 1;
-    }
+  .course-info {
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #6b7280;
+    font-size: 14px;
+    align-items: center;
+  }
+  .course-status {
+    /* desktop: badge alinhado à direita */
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+  }
 }
 
 .course-action {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .course-card.visited {
-    opacity: 0.7;
-    background-color: #cce6ff;
+  opacity: 0.7;
+  background-color: #cce6ff;
 }
 
 .visited-dot {
-    color: green;
-    font-size: 1rem;
-    margin-left: 4px;
+  color: green;
+  font-size: 1rem;
+  margin-left: 4px;
 }
 
 /*(min-width: 1025px) */
@@ -79,41 +79,58 @@
 
 /*(max-width: 767px) */
 @media screen and (max-width: 767px) {
-    .course-card {
-        display: grid;
-        width: 380px;
-        height: 260px;
+  .course-card {
+    display: grid;
+    width: 380px;
+    height: 260px;
+  }
+
+  .course-content {
+    margin: 0 10px;
+    gap: 5px;
+
+    .course-info-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
     }
 
-    .course-content {
-        margin: 0 10px;
-        gap: 5px;
-
-        .course-info-row {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 8px;
-        }
-
-        .course-info {
-            display: flex;
-            margin: 0;
-            flex-wrap: wrap;
-            gap: 10px;
-            color: #6b7280;
-            font-size: 12px;
-            align-items: center;
-        }
-
-        .course-status {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            margin-top: 8px;
-        }
+    .course-info {
+      display: flex;
+      margin: 0;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: #6b7280;
+      font-size: 12px;
+      align-items: center;
     }
 
-    .course-action {
-        margin-bottom: 50px;
+    .course-status {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 8px;
     }
+  }
+
+  .course-action {
+    margin-bottom: 50px;
+  }
+}
+
+.course-card.highlighted {
+  z-index: 10;
+  border: 2px solid $color-primary;
+  box-shadow: 0 0 16px 2px $color-primary;
+  position: relative;
+  animation: highlight-fade 1s;
+}
+
+@keyframes highlight-fade {
+  0% {
+    box-shadow: 0 0 32px 8px $color-primary;
+  }
+  100% {
+    box-shadow: 0 0 16px 2px $color-primary;
+  }
 }

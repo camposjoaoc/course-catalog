@@ -1,9 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot, faCalendarDays, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLocationDot,
+  faCalendarDays,
+  faCheckCircle,
+} from "@fortawesome/free-solid-svg-icons";
 import GoToCourseBtn from "../components/GoToCourseBtn";
 import CourseStatusBadge from "../components/CourseStatusBadge";
-import '../styles/CourseCard.scss';
+import "../styles/CourseCard.scss";
 
 function CourseCard({
   id,
@@ -14,23 +18,33 @@ function CourseCard({
   csnEligible,
   status,
   visitedCourses,
-  setVisitedCourses
+  setVisitedCourses,
+  highlighted,
 }) {
   const visited = visitedCourses.includes(id);
 
-
   return (
-    <div className={`course-card ${visited ? "visited" : ""}`}>
+    <div
+      className={`course-card${highlighted ? " highlighted" : ""} ${
+        visited ? "visited" : ""
+      }`}
+    >
       <div className="course-content">
         <h2 className="course-title">
           {title}
-          {visited && <FontAwesomeIcon icon={faCheckCircle} className="visited-dot" />}
+          {visited && (
+            <FontAwesomeIcon icon={faCheckCircle} className="visited-dot" />
+          )}
         </h2>
         <p>{description}</p>
         <div className="course-info-row">
           <div className="course-info">
-            <span><FontAwesomeIcon icon={faLocationDot} /> {location}</span>
-            <span><FontAwesomeIcon icon={faCalendarDays} /> {startDate}</span>
+            <span>
+              <FontAwesomeIcon icon={faLocationDot} /> {location}
+            </span>
+            <span>
+              <FontAwesomeIcon icon={faCalendarDays} /> {startDate}
+            </span>
             {csnEligible && <span>/ CSN Eligible</span>}
           </div>
           <div className="course-status">
@@ -46,5 +60,3 @@ function CourseCard({
 }
 
 export default CourseCard;
-
-

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import CourseCard from "../components/CourseCard";
 import CoursesData from "../data/CoursesData.json";
 import SearchBar from "../components/SearchBar";
@@ -9,10 +9,35 @@ import MobileFilters from "../components/MobileFilters";
 import "../styles/HomePage.scss";
 
 function HomePage() {
-  const [visibleCourses, setVisibleCourses] = useState(5);
+  const [visibleCourses, setVisibleCourses] = useState(() => {
+    // Initialize visibleCourses from localStorage or default to 5
+    // This allows the user to set how many courses they want to see initially
+    // and persists this choice across sessions.
+    return parseInt(localStorage.getItem("visibleCourses") || "5", 10);
+  });
   const [recentlyAddedIds, setRecentlyAddedIds] = useState([]);
   const [visitedCourses, setVisitedCourses] = useState([]);
   const [filteredCourses, setFilteredCourses] = useState(CoursesData);
+  const [highlightedCourseId, setHighlightedCourseId] = useState(null);
+
+  // Initialize visibleCourses from localStorage
+  useEffect(() => {
+    localStorage.setItem("visibleCourses", visibleCourses);
+  }, [visibleCourses]);
+
+  // Highlight the last clicked course
+  useEffect(() => {
+    const lastClicked = localStorage.getItem("lastClickedCourseId");
+    setHighlightedCourseId(lastClicked ? parseInt(lastClicked, 10) : null);
+
+    // Clear the highlight after 30 seconds
+    const timeout = setTimeout(() => {
+      setHighlightedCourseId(null);
+      localStorage.removeItem("lastClickedCourseId");
+    }, 30000);
+
+    return () => clearTimeout(timeout);
+  }, []);
 
   //Visited courses
   useEffect(() => {
@@ -21,19 +46,34 @@ function HomePage() {
     const CACHE_EXPIRATION_TIME = 30 * 60 * 1000;
 
     const freshIds = stored
-      .filter(item => now - item.timestamp < CACHE_EXPIRATION_TIME)
-      .map(item => item.id);
+      .filter((item) => now - item.timestamp < CACHE_EXPIRATION_TIME)
+      .map((item) => item.id);
 
     setVisitedCourses(freshIds);
   }, []);
 
+  // Crie refs para os cards
+  const cardRefs = useRef({});
+
+  // Scroll para o card destacado ao montar
+  useEffect(() => {
+    if (highlightedCourseId && cardRefs.current[highlightedCourseId]) {
+      cardRefs.current[highlightedCourseId].scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }
+  }, [highlightedCourseId]);
+
   // Loads 5 more courses and temporarily flags the new ones to trigger animation
   const handleLoadMore = () => {
-    setVisibleCourses(prev => {
+    setVisibleCourses((prev) => {
       const newVisible = prev + 5;
 
-      // Get IDs of newly added courses 
-      const newCourses = filteredCourses.slice(prev, newVisible).map(c => c.id);
+      // Get IDs of newly added courses
+      const newCourses = filteredCourses
+        .slice(prev, newVisible)
+        .map((c) => c.id);
       setRecentlyAddedIds(newCourses);
 
       setTimeout(() => {
@@ -49,15 +89,19 @@ function HomePage() {
     let filtered = CoursesData;
 
     if (searchTerm) {
-      filtered = filtered.filter(course =>
-        course.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        (course.shortDescription && course.shortDescription.toLowerCase().includes(searchTerm.toLowerCase()))
+      filtered = filtered.filter(
+        (course) =>
+          course.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          (course.shortDescription &&
+            course.shortDescription
+              .toLowerCase()
+              .includes(searchTerm.toLowerCase()))
       );
     }
 
     if (selectedLocation) {
-      filtered = filtered.filter(course =>
-        course.location && course.location === selectedLocation
+      filtered = filtered.filter(
+        (course) => course.location && course.location === selectedLocation
       );
     }
 
@@ -83,13 +127,18 @@ function HomePage() {
           {coursesToShow.length === 0 ? (
             <div className="no-results-message">
               <p className="no-results-message">No courses found</p>
-              <p className="no-results-message">Please try a different search term or location.</p>
+              <p className="no-results-message">
+                Please try a different search term or location.
+              </p>
             </div>
           ) : (
             coursesToShow.map((course) => (
               <div
                 key={course.id}
-                className={`course-card-wrapper ${recentlyAddedIds.includes(course.id) ? "fade-in" : ""}`}
+                ref={(el) => (cardRefs.current[course.id] = el)}
+                className={`course-card-wrapper ${
+                  recentlyAddedIds.includes(course.id) ? "fade-in" : ""
+                }`}
               >
                 <CourseCard
                   id={course.id}
@@ -101,6 +150,7 @@ function HomePage() {
                   status={course.status}
                   visitedCourses={visitedCourses}
                   setVisitedCourses={setVisitedCourses}
+                  highlighted={highlightedCourseId === course.id}
                 />
               </div>
             ))
@@ -116,8 +166,7 @@ function HomePage() {
         </div>
       </main>
     </div>
-  )
+  );
 }
 
 export default HomePage;
-
