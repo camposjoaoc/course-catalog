@@ -1,6 +1,7 @@
 // src/components/NavBar.jsx
 import React, { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "../styles/NavBar.scss";
 
 function NavBar() {
@@ -13,7 +14,9 @@ function NavBar() {
   return (
     <header className="navbar">
       <div className="navbar-container">
-        <h2 className="logo">School X</h2>
+        <Link to="/" className="logo">
+          <h2>School X</h2>
+        </Link>
 
         <nav ref={navRef} className="nav-links">
           <a href="#courses">Courses</a>
@@ -33,11 +36,7 @@ function NavBar() {
         </nav>
 
         {/* Burger icon */}
-        <button
-          className="nav-btn"
-          onClick={toggleNav}
-          aria-label="Open menu"
-        >
+        <button className="nav-btn" onClick={toggleNav} aria-label="Open menu">
           <FaBars />
         </button>
       </div>
@@ -46,4 +45,3 @@ function NavBar() {
 }
 
 export default NavBar;
-

@@ -20,7 +20,7 @@
 
   select {
     padding: 0.5rem 1rem;
-    border: 1px solid #b0c4de;
+    border: 1px solid $color-secondary;
     border-radius: 6px;
     background-color: #ffffff;
     font-family: $font-family-content;
@@ -37,12 +37,12 @@
     transition: all 0.2s ease;
 
     &:hover {
-      border-color: #0077cc;
+      border-color: $color-primary;
     }
 
     &:focus {
       outline: none;
-      border-color: #0077cc;
+      border-color: $color-primary;
       box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.2);
     }
   }

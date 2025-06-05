@@ -1,872 +1,1026 @@
 [
-    {
-        "id": 1,
-        "title": "Frontend Developer",
-        "shortDescription": "Become a job-ready Frontend Developer in 2 years — with a 10-month internship in Sweden, taught in English and free for EU/EEA students.",
-        "courseDescription": "This 2-year Higher Vocational Education program prepares you for a successful career as a Frontend Developer. You will master HTML5, CSS3, JavaScript (ES6+), React, and responsive web design. The curriculum covers accessibility, version control with Git, agile methodologies (Scrum/Kanban), and UI/UX fundamentals. You will gain hands-on experience with tools like Figma, Webpack, and REST APIs. Real-world projects and a 10-month internship (LIA) at a Swedish company will help you build a strong portfolio. Upon graduation, you will be able to build interactive web applications, collaborate in cross-functional teams, and use industry-standard tools and workflows.",
-        "requirements": "You must have a high school diploma or equivalent, and strong interest in web development. Some basic programming knowledge is recommended. English proficiency (equivalent to B2 level) is required.",
-        "location": "Malmö",
-        "startDate": "Sep 2025",
-        "startingDate": "Dec 2025",
-        "place": "Sweden",
-        "internship": "10 months",
-        "duration": "2 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€15,000 (EUR)",
-                "note": "Split into five semester installments"
-            }
-        },
-        "csnEligible": true,
-        "status": "open",
-        "image": "../src/assets/img/img_frontend.png"
+  {
+    "id": 1,
+    "title": "Frontend Developer",
+    "shortDescription": "Become a job-ready Frontend Developer in 2 years — with a 10-month internship in Sweden, taught in English and free for EU/EEA students.",
+    "courseDescription": "This 2-year Higher Vocational Education program prepares you for a successful career as a Frontend Developer. You will master HTML5, CSS3, JavaScript (ES6+), React, and responsive web design. The curriculum covers accessibility, version control with Git, agile methodologies (Scrum/Kanban), and UI/UX fundamentals. You will gain hands-on experience with tools like Figma, Webpack, and REST APIs. Real-world projects and a 10-month internship (LIA) at a Swedish company will help you build a strong portfolio. Upon graduation, you will be able to build interactive web applications, collaborate in cross-functional teams, and use industry-standard tools and workflows.",
+    "requirements": "You must have a high school diploma or equivalent, and strong interest in web development. Some basic programming knowledge is recommended. English proficiency (equivalent to B2 level) is required.",
+    "location": "Malmö",
+    "startDate": "Sep 2025",
+    "startingDate": "Dec 2025",
+    "place": "Sweden",
+    "internship": "10 months",
+    "duration": "2 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€15,000 (EUR)",
+        "note": "Split into five semester installments"
+      }
     },
-    {
-        "id": 2,
-        "title": "Backend Developer",
-        "shortDescription": "Build scalable backend systems using Node.js and PostgreSQL in this intensive vocational program.",
-        "courseDescription": "This program focuses on backend development using Node.js, Express, and PostgreSQL. You will learn to design and build RESTful APIs, implement authentication and authorization, and manage databases efficiently. The course covers cloud deployment (AWS, Heroku), Docker, and CI/CD pipelines. You will gain hands-on experience with tools like Postman, Git, and testing frameworks such as Jest. Industry projects and mentorship prepare you for a backend developer role in modern tech companies, with skills in server-side programming, database management, and scalable system design.",
-        "requirements": "Basic JavaScript knowledge and high school diploma. B2-level English recommended.",
-        "location": "Stockholm",
-        "startDate": "Oct 2025",
-        "startingDate": "Oct 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "1.5 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€20,000 (EUR)",
-                "note": "Split into four semester installments"
-            }
-        },
-        "csnEligible": false,
-        "status": "late",
-        "image": "../src/assets/img/img_backend.png"
+    "csnEligible": true,
+    "status": "open",
+    "image": "../src/assets/img/img_frontend.png",
+    "area": "Web Development",
+    "type": "Vocational",
+    "level": "Bachelor",
+    "certificate": true
+  },
+  {
+    "id": 2,
+    "title": "Backend Developer",
+    "shortDescription": "Build scalable backend systems using Node.js and PostgreSQL in this intensive vocational program.",
+    "courseDescription": "This program focuses on backend development using Node.js, Express, and PostgreSQL. You will learn to design and build RESTful APIs, implement authentication and authorization, and manage databases efficiently. The course covers cloud deployment (AWS, Heroku), Docker, and CI/CD pipelines. You will gain hands-on experience with tools like Postman, Git, and testing frameworks such as Jest. Industry projects and mentorship prepare you for a backend developer role in modern tech companies, with skills in server-side programming, database management, and scalable system design.",
+    "requirements": "Basic JavaScript knowledge and high school diploma. B2-level English recommended.",
+    "location": "Stockholm",
+    "startDate": "Oct 2025",
+    "startingDate": "Oct 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "1.5 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€20,000 (EUR)",
+        "note": "Split into four semester installments"
+      }
     },
-    {
-        "id": 3,
-        "title": "Full Stack Web Developer",
-        "shortDescription": "Master both frontend and backend skills to become a complete web developer.",
-        "courseDescription": "Learn to build complete web applications from scratch. You will master HTML, CSS, JavaScript, React for frontend, and Node.js with MongoDB for backend. The course covers RESTful APIs, authentication, deployment to cloud platforms, and DevOps basics. You will work with Git, Docker, and modern CI/CD tools. Capstone projects and an 8-month internship will help you gain real-world experience and a strong portfolio.",
-        "requirements": "Motivation and logical thinking. Prior programming knowledge helpful. English B2 required.",
-        "location": "Online",
-        "startDate": "Nov 2025",
-        "startingDate": "Nov 2025",
-        "place": "Sweden",
-        "internship": "8 months",
-        "duration": "2 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€15,000 (EUR)",
-                "note": "Split into six semester installments"
-            }
-        },
-        "csnEligible": true,
-        "status": "closed",
-        "image": "../src/assets/img/img_fullstack.png"
+    "csnEligible": false,
+    "status": "late",
+    "image": "../src/assets/img/img_backend.png",
+    "area": "Web Development",
+    "type": "Vocational",
+    "level": "Bachelor",
+    "certificate": true
+  },
+  {
+    "id": 3,
+    "title": "Full Stack Web Developer",
+    "shortDescription": "Master both frontend and backend skills to become a complete web developer.",
+    "courseDescription": "Learn to build complete web applications from scratch. You will master HTML, CSS, JavaScript, React for frontend, and Node.js with MongoDB for backend. The course covers RESTful APIs, authentication, deployment to cloud platforms, and DevOps basics. You will work with Git, Docker, and modern CI/CD tools. Capstone projects and an 8-month internship will help you gain real-world experience and a strong portfolio.",
+    "requirements": "Motivation and logical thinking. Prior programming knowledge helpful. English B2 required.",
+    "location": "Online",
+    "startDate": "Nov 2025",
+    "startingDate": "Nov 2025",
+    "place": "Sweden",
+    "internship": "8 months",
+    "duration": "2 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€15,000 (EUR)",
+        "note": "Split into six semester installments"
+      }
     },
-    {
-        "id": 4,
-        "title": "UI/UX Design",
-        "shortDescription": "Design intuitive interfaces and improve user experiences using modern tools.",
-        "courseDescription": "This course covers UI design, UX research, wireframing, prototyping, and usability testing using Figma, Adobe XD, and other design systems. You will learn about user-centered design, accessibility, color theory, typography, and design thinking. Collaborate with developers in multidisciplinary projects and build a professional portfolio. Gain experience with tools like Figma, Adobe XD, Sketch, and InVision.",
-        "requirements": "Creativity, basic digital skills, and English proficiency (B2). No design background needed.",
-        "location": "Gothenburg",
-        "startDate": "Aug 2025",
-        "startingDate": "Aug 2025",
-        "place": "Sweden",
-        "internship": "4 months",
-        "duration": "1.5 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€18,000 (EUR)",
-                "note": "Split into five semester installments"
-            }
-        },
-        "csnEligible": true,
-        "status": "open",
-        "image": "../src/assets/img/img_UI_UX.png"
+    "csnEligible": true,
+    "status": "closed",
+    "image": "../src/assets/img/img_fullstack.png",
+    "area": "Web Development",
+    "type": "Vocational",
+    "level": "Bachelor",
+    "certificate": true
+  },
+  {
+    "id": 4,
+    "title": "UI/UX Design",
+    "shortDescription": "Design intuitive interfaces and improve user experiences using modern tools.",
+    "courseDescription": "This course covers UI design, UX research, wireframing, prototyping, and usability testing using Figma, Adobe XD, and other design systems. You will learn about user-centered design, accessibility, color theory, typography, and design thinking. Collaborate with developers in multidisciplinary projects and build a professional portfolio. Gain experience with tools like Figma, Adobe XD, Sketch, and InVision.",
+    "requirements": "Creativity, basic digital skills, and English proficiency (B2). No design background needed.",
+    "location": "Gothenburg",
+    "startDate": "Aug 2025",
+    "startingDate": "Aug 2025",
+    "place": "Sweden",
+    "internship": "4 months",
+    "duration": "1.5 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€18,000 (EUR)",
+        "note": "Split into five semester installments"
+      }
     },
-    {
-        "id": 5,
-        "title": "DevOps & Cloud Engineering",
-        "shortDescription": "Get hands-on with CI/CD pipelines, Docker, Kubernetes, and major cloud platforms.",
-        "courseDescription": "Focuses on DevOps culture, infrastructure automation, containerization (Docker), orchestration (Kubernetes), and cloud services (AWS, Azure). You will learn about continuous integration and deployment, monitoring, and infrastructure as code (Terraform). Prepares you for real-world DevOps and cloud engineering tasks, including automation scripting, cloud security, and troubleshooting.",
-        "requirements": "Familiarity with Linux and scripting. B2 English. Strong motivation to work in cloud/devops roles.",
-        "location": "Online",
-        "startDate": "Jul 2025",
-        "startingDate": "Jul 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€15,000 (EUR)",
-                "note": "Split into six semester installments"
-            }
-        },
-        "csnEligible": false,
-        "status": "open",
-        "image": "../src/assets/img/img_devops.png"
+    "csnEligible": true,
+    "status": "open",
+    "image": "../src/assets/img/img_UI_UX.png",
+    "area": "Design",
+    "type": "Vocational",
+    "level": "Bachelor",
+    "certificate": true
+  },
+  {
+    "id": 5,
+    "title": "DevOps & Cloud Engineering",
+    "shortDescription": "Get hands-on with CI/CD pipelines, Docker, Kubernetes, and major cloud platforms.",
+    "courseDescription": "Focuses on DevOps culture, infrastructure automation, containerization (Docker), orchestration (Kubernetes), and cloud services (AWS, Azure). You will learn about continuous integration and deployment, monitoring, and infrastructure as code (Terraform). Prepares you for real-world DevOps and cloud engineering tasks, including automation scripting, cloud security, and troubleshooting.",
+    "requirements": "Familiarity with Linux and scripting. B2 English. Strong motivation to work in cloud/devops roles.",
+    "location": "Online",
+    "startDate": "Jul 2025",
+    "startingDate": "Jul 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€15,000 (EUR)",
+        "note": "Split into six semester installments"
+      }
     },
-    {
-        "id": 6,
-        "title": "Mobile App Development",
-        "shortDescription": "Develop iOS and Android apps using React Native and Flutter in this hands-on course.",
-        "courseDescription": "You will learn to build cross-platform mobile apps from scratch using React Native and Flutter. The curriculum covers mobile UI/UX, state management, API integration, and publishing apps to the App Store and Google Play. You will gain experience with tools like Expo, Firebase, and Figma. Includes project work and a 6-month internship to build your portfolio.",
-        "requirements": "Basic programming knowledge. B2 English level. Strong interest in mobile tech recommended.",
-        "location": "Malmö",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€15,000 (EUR)",
-                "note": "Split into four semester installments"
-            }
-        },
-        "csnEligible": true,
-        "status": "closed",
-        "image": "../src/assets/img/img_mobiledev.png"
+    "csnEligible": false,
+    "status": "open",
+    "image": "../src/assets/img/img_devops.png",
+    "area": "Cloud & DevOps",
+    "type": "Vocational",
+    "level": "Master",
+    "certificate": true
+  },
+  {
+    "id": 6,
+    "title": "Mobile App Development",
+    "shortDescription": "Develop iOS and Android apps using React Native and Flutter in this hands-on course.",
+    "courseDescription": "You will learn to build cross-platform mobile apps from scratch using React Native and Flutter. The curriculum covers mobile UI/UX, state management, API integration, and publishing apps to the App Store and Google Play. You will gain experience with tools like Expo, Firebase, and Figma. Includes project work and a 6-month internship to build your portfolio.",
+    "requirements": "Basic programming knowledge. B2 English level. Strong interest in mobile tech recommended.",
+    "location": "Malmö",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€15,000 (EUR)",
+        "note": "Split into four semester installments"
+      }
     },
-    {
-        "id": 7,
-        "title": "Data Science & Python",
-        "shortDescription": "Master data analysis and machine learning using Python, Pandas, and scikit-learn.",
-        "courseDescription": "This course covers data analysis, statistics, and machine learning using Python. You will work with libraries such as Pandas, NumPy, Matplotlib, and scikit-learn. The curriculum includes data visualization, data cleaning, supervised and unsupervised learning, and model evaluation. You will also gain experience with Jupyter Notebooks, version control with Git, and real-world datasets. Capstone projects prepare you for roles in data analysis and machine learning, equipping you with skills in data manipulation, predictive modeling, and data-driven decision making.",
-        "requirements": "Strong interest in data. Math skills helpful. B2 level English required.",
-        "location": "Stockholm",
-        "startDate": "Oct 2025",
-        "startingDate": "Oct 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€22,000 (EUR)",
-                "note": "Split into four semester installments"
-            }
-        },
-        "csnEligible": true,
-        "status": "open",
-        "image": "../src/assets/img/img_datascience.png"
+    "csnEligible": true,
+    "status": "closed",
+    "image": "../src/assets/img/img_mobiledev.png",
+    "area": "Mobile Development",
+    "type": "Vocational",
+    "level": "Post-secondary",
+    "certificate": true
+  },
+  {
+    "id": 7,
+    "title": "Data Science & Python",
+    "shortDescription": "Master data analysis and machine learning using Python, Pandas, and scikit-learn.",
+    "courseDescription": "This course covers data analysis, statistics, and machine learning using Python. You will work with libraries such as Pandas, NumPy, Matplotlib, and scikit-learn. The curriculum includes data visualization, data cleaning, supervised and unsupervised learning, and model evaluation. You will also gain experience with Jupyter Notebooks, version control with Git, and real-world datasets. Capstone projects prepare you for roles in data analysis and machine learning, equipping you with skills in data manipulation, predictive modeling, and data-driven decision making.",
+    "requirements": "Strong interest in data. Math skills helpful. B2 level English required.",
+    "location": "Stockholm",
+    "startDate": "Oct 2025",
+    "startingDate": "Oct 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€22,000 (EUR)",
+        "note": "Split into four semester installments"
+      }
     },
-    {
-        "id": 8,
-        "title": "Cybersecurity Fundamentals",
-        "shortDescription": "Protect systems and data by understanding cybersecurity basics and best practices.",
-        "courseDescription": "Topics include network security, authentication, encryption, vulnerabilities, ethical hacking, and compliance. You will learn to use tools like Wireshark, Kali Linux, Metasploit, and Nessus. The course covers risk assessment, incident response, and security best practices. Hands-on labs and projects prepare you for entry-level roles in cybersecurity.",
-        "requirements": "Basic IT knowledge. High school diploma and B2 English required.",
-        "location": "Online",
-        "startDate": "Oct 2025",
-        "startingDate": "Oct 2025",
-        "place": "Sweden",
-        "internship": "4 months",
-        "duration": "1.5 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€18,000 (EUR)",
-                "note": "Split into four semester installments"
-            }
-        },
-        "csnEligible": false,
-        "status": "open",
-        "image": "../src/assets/img/img_cybersecurity.png"
+    "csnEligible": true,
+    "status": "open",
+    "image": "../src/assets/img/img_datascience.png",
+    "area": "Data Science",
+    "type": "Vocational",
+    "level": "Master",
+    "certificate": true
+  },
+  {
+    "id": 8,
+    "title": "Cybersecurity Fundamentals",
+    "shortDescription": "Protect systems and data by understanding cybersecurity basics and best practices.",
+    "courseDescription": "Topics include network security, authentication, encryption, vulnerabilities, ethical hacking, and compliance. You will learn to use tools like Wireshark, Kali Linux, Metasploit, and Nessus. The course covers risk assessment, incident response, and security best practices. Hands-on labs and projects prepare you for entry-level roles in cybersecurity.",
+    "requirements": "Basic IT knowledge. High school diploma and B2 English required.",
+    "location": "Online",
+    "startDate": "Oct 2025",
+    "startingDate": "Oct 2025",
+    "place": "Sweden",
+    "internship": "4 months",
+    "duration": "1.5 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€18,000 (EUR)",
+        "note": "Split into four semester installments"
+      }
     },
-    {
-        "id": 9,
-        "title": "AI & Machine Learning",
-        "shortDescription": "Dive into AI development, neural networks, and ML pipelines with Python.",
-        "courseDescription": "Covers supervised and unsupervised learning, neural networks, TensorFlow, and AI project lifecycle. You will build predictive models, work with real datasets, and learn about deep learning, natural language processing, and computer vision. The course includes hands-on projects using Python, TensorFlow, Keras, and scikit-learn.",
-        "requirements": "Python knowledge preferred. Math background helpful. English proficiency (B2).",
-        "location": "Gothenburg",
-        "startDate": "Nov 2025",
-        "startingDate": "Nov 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€18,000 (EUR)",
-                "note": "Split into five semester installments"
-            }
-        },
-        "csnEligible": true,
-        "status": "open",
-        "image": "../src/assets/img/img_AI.png"
+    "csnEligible": false,
+    "status": "open",
+    "image": "../src/assets/img/img_cybersecurity.png",
+    "area": "Cybersecurity",
+    "type": "Vocational",
+    "level": "Post-secondary",
+    "certificate": true
+  },
+  {
+    "id": 9,
+    "title": "AI & Machine Learning",
+    "shortDescription": "Dive into AI development, neural networks, and ML pipelines with Python.",
+    "courseDescription": "Covers supervised and unsupervised learning, neural networks, TensorFlow, and AI project lifecycle. You will build predictive models, work with real datasets, and learn about deep learning, natural language processing, and computer vision. The course includes hands-on projects using Python, TensorFlow, Keras, and scikit-learn.",
+    "requirements": "Python knowledge preferred. Math background helpful. English proficiency (B2).",
+    "location": "Gothenburg",
+    "startDate": "Nov 2025",
+    "startingDate": "Nov 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€18,000 (EUR)",
+        "note": "Split into five semester installments"
+      }
     },
-    {
-        "id": 10,
-        "title": "Cloud Architecture",
-        "shortDescription": "Design and deploy scalable cloud systems using AWS, Azure, and GCP.",
-        "courseDescription": "Learn cloud fundamentals, architecture design, security, and best practices across AWS, Azure, and GCP. You will develop hands-on labs and cloud-native projects, covering topics like serverless computing, cloud networking, automation with Terraform, and cost optimization. Gain experience with cloud monitoring, scaling, and disaster recovery.",
-        "requirements": "Basic IT/cloud knowledge. Interest in architecture & infrastructure. B2 English.",
-        "location": "Stockholm",
-        "startDate": "Dec 2025",
-        "startingDate": "Dec 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€20,000 (EUR)",
-                "note": "Split into five semester installments"
-            }
-        },
-        "csnEligible": false,
-        "status": "late",
-        "image": "/images/course-10.jpg"
+    "csnEligible": true,
+    "status": "open",
+    "image": "../src/assets/img/img_AI.png",
+    "area": "AI & ML",
+    "type": "Vocational",
+    "level": "Master",
+    "certificate": true
+  },
+  {
+    "id": 10,
+    "title": "Cloud Architecture",
+    "shortDescription": "Design and deploy scalable cloud systems using AWS, Azure, and GCP.",
+    "courseDescription": "Learn cloud fundamentals, architecture design, security, and best practices across AWS, Azure, and GCP. You will develop hands-on labs and cloud-native projects, covering topics like serverless computing, cloud networking, automation with Terraform, and cost optimization. Gain experience with cloud monitoring, scaling, and disaster recovery.",
+    "requirements": "Basic IT/cloud knowledge. Interest in architecture & infrastructure. B2 English.",
+    "location": "Stockholm",
+    "startDate": "Dec 2025",
+    "startingDate": "Dec 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€20,000 (EUR)",
+        "note": "Split into five semester installments"
+      }
     },
-    {
-        "id": 11,
-        "title": "Game Development",
-        "shortDescription": "Game Development training program for hands-on vocational learning.",
-        "courseDescription": "This program provides comprehensive training in game development, including C#, Unity, Unreal Engine, and game design principles. You will learn about 2D/3D graphics, physics, animation, and sound integration. The curriculum includes teamwork, agile project management, and a 6-month internship to prepare you for the job market. Courses are held in English.",
-        "requirements": "High school diploma or equivalent. English proficiency required.",
-        "location": "Online",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€20,000 (EUR)",
-                "note": "Split into six semester installments"
-            }
-        },
-        "csnEligible": false,
-        "status": "open",
-        "image": "/images/course-11.jpg"
+    "csnEligible": false,
+    "status": "late",
+    "image": "/images/course-10.jpg",
+    "area": "Cloud & DevOps",
+    "type": "Vocational",
+    "level": "Master",
+    "certificate": true
+  },
+  {
+    "id": 11,
+    "title": "Game Development",
+    "shortDescription": "Game Development training program for hands-on vocational learning.",
+    "courseDescription": "This program provides comprehensive training in game development, including C#, Unity, Unreal Engine, and game design principles. You will learn about 2D/3D graphics, physics, animation, and sound integration. The curriculum includes teamwork, agile project management, and a 6-month internship to prepare you for the job market. Courses are held in English.",
+    "requirements": "High school diploma or equivalent. English proficiency required.",
+    "location": "Online",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€20,000 (EUR)",
+        "note": "Split into six semester installments"
+      }
     },
-    {
-        "id": 12,
-        "title": "Digital Marknadsföring",
-        "shortDescription": "Digital Marknadsföring training program for hands-on vocational learning.",
-        "courseDescription": "Detta program ger dig djupgående kunskaper inom digital marknadsföring. Du lär dig om SEO, SEM, sociala medier, e-postmarknadsföring och analysverktyg som Google Analytics och Facebook Business Manager. Programmet inkluderar praktiska projekt där du arbetar med riktiga kampanjer och får erfarenhet av verktyg som HubSpot och WordPress. Efter utbildningen kan du planera, genomföra och analysera digitala marknadsföringsinsatser samt arbeta med både strategiska och operativa uppgifter inom området.",
-        "requirements": "High school diploma or equivalent. Swedish proficiency required.",
-        "location": "Sweden",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "Swedish",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€20,000 (EUR)",
-                "note": "Split into five semester installments"
-            }
-        },
-        "csnEligible": true,
-        "status": "closed",
-        "image": "/images/course-12.jpg"
+    "csnEligible": false,
+    "status": "open",
+    "image": "/images/course-11.jpg",
+    "area": "Game Development",
+    "type": "Vocational",
+    "level": "Post-secondary",
+    "certificate": true
+  },
+  {
+    "id": 12,
+    "title": "Digital Marknadsföring",
+    "shortDescription": "Digital Marknadsföring training program for hands-on vocational learning.",
+    "courseDescription": "Detta program ger dig djupgående kunskaper inom digital marknadsföring. Du lär dig om SEO, SEM, sociala medier, e-postmarknadsföring och analysverktyg som Google Analytics och Facebook Business Manager. Programmet inkluderar praktiska projekt där du arbetar med riktiga kampanjer och får erfarenhet av verktyg som HubSpot och WordPress. Efter utbildningen kan du planera, genomföra och analysera digitala marknadsföringsinsatser samt arbeta med både strategiska och operativa uppgifter inom området.",
+    "requirements": "High school diploma or equivalent. Swedish proficiency required.",
+    "location": "Sweden",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "Swedish",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€20,000 (EUR)",
+        "note": "Split into five semester installments"
+      }
     },
-    {
-        "id": 13,
-        "title": "E-commerce Manager",
-        "shortDescription": "E-commerce Manager training program for hands-on vocational learning.",
-        "courseDescription": "This program covers e-commerce strategy, digital marketing, logistics, and customer experience. You will learn to use platforms like Shopify, WooCommerce, and Magento, as well as analytics tools such as Google Analytics. The curriculum includes SEO, SEM, content marketing, and project management. Practical projects and a 6-month internship prepare you for a career in e-commerce management. Courses are held in English.",
-        "requirements": "High school diploma or equivalent. English proficiency required.",
-        "location": "Online",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€15,000 (EUR)",
-                "note": "Split into six semester installments"
-            }
-        },
-        "csnEligible": false,
-        "status": "open",
-        "image": "/images/course-13.jpg"
+    "csnEligible": true,
+    "status": "closed",
+    "image": "/images/course-12.jpg",
+    "area": "Marketing",
+    "type": "Vocational",
+    "level": "Bachelor",
+    "certificate": true
+  },
+  {
+    "id": 13,
+    "title": "E-commerce Manager",
+    "shortDescription": "E-commerce Manager training program for hands-on vocational learning.",
+    "courseDescription": "This program covers e-commerce strategy, digital marketing, logistics, and customer experience. You will learn to use platforms like Shopify, WooCommerce, and Magento, as well as analytics tools such as Google Analytics. The curriculum includes SEO, SEM, content marketing, and project management. Practical projects and a 6-month internship prepare you for a career in e-commerce management. Courses are held in English.",
+    "requirements": "High school diploma or equivalent. English proficiency required.",
+    "location": "Online",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€15,000 (EUR)",
+        "note": "Split into six semester installments"
+      }
     },
-    {
-        "id": 14,
-        "title": "Systemutvecklare .NET",
-        "shortDescription": "Systemutvecklare .NET training program for hands-on vocational learning.",
-        "courseDescription": "Utbildningen till Systemutvecklare .NET ger dig kunskaper i C#, .NET-plattformen, databashantering med SQL Server och utveckling av webbapplikationer med ASP.NET. Du får arbeta med moderna utvecklingsverktyg som Visual Studio och Git, samt lära dig om testning, versionshantering och agila arbetsmetoder. Praktiska projekt och LIA-perioder ger dig värdefull erfarenhet från arbetslivet och förbereder dig för en karriär som systemutvecklare.",
-        "requirements": "High school diploma or equivalent. Swedish proficiency required.",
-        "location": "Sweden",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "Swedish",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€18,000 (EUR)",
-                "note": "Split into five semester installments"
-            }
-        },
-        "csnEligible": true,
-        "status": "open",
-        "image": "/images/course-14.jpg"
+    "csnEligible": false,
+    "status": "open",
+    "image": "/images/course-13.jpg",
+    "area": "Marketing",
+    "type": "Vocational",
+    "level": "Bachelor",
+    "certificate": true
+  },
+  {
+    "id": 14,
+    "title": "Systemutvecklare .NET",
+    "shortDescription": "Systemutvecklare .NET training program for hands-on vocational learning.",
+    "courseDescription": "Utbildningen till Systemutvecklare .NET ger dig kunskaper i C#, .NET-plattformen, databashantering med SQL Server och utveckling av webbapplikationer med ASP.NET. Du får arbeta med moderna utvecklingsverktyg som Visual Studio och Git, samt lära dig om testning, versionshantering och agila arbetsmetoder. Praktiska projekt och LIA-perioder ger dig värdefull erfarenhet från arbetslivet och förbereder dig för en karriär som systemutvecklare.",
+    "requirements": "High school diploma or equivalent. Swedish proficiency required.",
+    "location": "Sweden",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "Swedish",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€18,000 (EUR)",
+        "note": "Split into five semester installments"
+      }
     },
-    {
-        "id": 15,
-        "title": "AI i Verksamheten",
-        "shortDescription": "AI i Verksamheten training program for hands-on vocational learning.",
-        "courseDescription": "Utbildningen ger dig praktiska och teoretiska kunskaper om AI och dess tillämpningar i verksamheter. Du lär dig om maskininlärning, dataanalys, AI-strategier och verktyg som Python, TensorFlow och Power BI. Programmet inkluderar projekt där du arbetar med verkliga data och implementerar AI-lösningar i företag. Kurserna hålls på svenska.",
-        "requirements": "High school diploma or equivalent. Swedish proficiency required.",
-        "location": "Sweden",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "Swedish",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€15,000 (EUR)",
-                "note": "Split into six semester installments"
-            }
-        },
-        "csnEligible": false,
-        "status": "closed",
-        "image": "/images/course-15.jpg"
+    "csnEligible": true,
+    "status": "open",
+    "image": "/images/course-14.jpg",
+    "area": "Software Development",
+    "type": "Vocational",
+    "level": "Bachelor",
+    "certificate": true
+  },
+  {
+    "id": 15,
+    "title": "AI i Verksamheten",
+    "shortDescription": "AI i Verksamheten training program for hands-on vocational learning.",
+    "courseDescription": "Utbildningen ger dig praktiska och teoretiska kunskaper om AI och dess tillämpningar i verksamheter. Du lär dig om maskininlärning, dataanalys, AI-strategier och verktyg som Python, TensorFlow och Power BI. Programmet inkluderar projekt där du arbetar med verkliga data och implementerar AI-lösningar i företag. Kurserna hålls på svenska.",
+    "requirements": "High school diploma or equivalent. Swedish proficiency required.",
+    "location": "Sweden",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "Swedish",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€15,000 (EUR)",
+        "note": "Split into six semester installments"
+      }
     },
-    {
-        "id": 16,
-        "title": "Robotics & Automation",
-        "shortDescription": "Robotics & Automation training program for hands-on vocational learning.",
-        "courseDescription": "This program covers robotics fundamentals, automation systems, PLC programming, and industrial robotics. You will work with hardware and simulation tools, learn about sensors, actuators, and control systems. The curriculum includes teamwork, project management, and a 6-month internship. Courses are held in English.",
-        "requirements": "High school diploma or equivalent. English proficiency required.",
-        "location": "Online",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€15,000 (EUR)",
-                "note": "Split into four semester installments"
-            }
-        },
-        "csnEligible": true,
-        "status": "open",
-        "image": "/images/course-16.jpg"
+    "csnEligible": false,
+    "status": "closed",
+    "image": "/images/course-15.jpg",
+    "area": "AI & ML",
+    "type": "Vocational",
+    "level": "Specialization",
+    "certificate": true
+  },
+  {
+    "id": 16,
+    "title": "Robotics & Automation",
+    "shortDescription": "Robotics & Automation training program for hands-on vocational learning.",
+    "courseDescription": "This program covers robotics fundamentals, automation systems, PLC programming, and industrial robotics. You will work with hardware and simulation tools, learn about sensors, actuators, and control systems. The curriculum includes teamwork, project management, and a 6-month internship. Courses are held in English.",
+    "requirements": "High school diploma or equivalent. English proficiency required.",
+    "location": "Online",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€15,000 (EUR)",
+        "note": "Split into four semester installments"
+      }
     },
-    {
-        "id": 17,
-        "title": "Cyberförsvar och Säkerhet",
-        "shortDescription": "Cyberförsvar och Säkerhet training program for hands-on vocational learning.",
-        "courseDescription": "Utbildningen ger dig kunskaper om cybersäkerhet, nätverkssäkerhet, incidenthantering och riskanalys. Du lär dig använda verktyg som Wireshark, Kali Linux och arbeta med penetrationstester och säkerhetsstrategier. Praktiska projekt och LIA-perioder förbereder dig för arbete inom cybersäkerhet. Kurserna hålls på svenska.",
-        "requirements": "High school diploma or equivalent. Swedish proficiency required.",
-        "location": "Sweden",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "Swedish",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€22,000 (EUR)",
-                "note": "Split into four semester installments"
-            }
-        },
-        "csnEligible": false,
-        "status": "open",
-        "image": "/images/course-17.jpg"
+    "csnEligible": true,
+    "status": "open",
+    "image": "/images/course-16.jpg",
+    "area": "Engineering",
+    "type": "Vocational",
+    "level": "Post-secondary",
+    "certificate": true
+  },
+  {
+    "id": 17,
+    "title": "Cyberförsvar och Säkerhet",
+    "shortDescription": "Cyberförsvar och Säkerhet training program for hands-on vocational learning.",
+    "courseDescription": "Utbildningen ger dig kunskaper om cybersäkerhet, nätverkssäkerhet, incidenthantering och riskanalys. Du lär dig använda verktyg som Wireshark, Kali Linux och arbeta med penetrationstester och säkerhetsstrategier. Praktiska projekt och LIA-perioder förbereder dig för arbete inom cybersäkerhet. Kurserna hålls på svenska.",
+    "requirements": "High school diploma or equivalent. Swedish proficiency required.",
+    "location": "Sweden",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "Swedish",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€22,000 (EUR)",
+        "note": "Split into four semester installments"
+      }
     },
-    {
-        "id": 18,
-        "title": "Creative Coding",
-        "shortDescription": "Creative Coding training program for hands-on vocational learning.",
-        "courseDescription": "This program explores creative programming, generative art, and interactive installations. You will learn JavaScript, Processing, p5.js, and creative use of sensors and hardware. The curriculum includes digital art, sound, and visual programming. Courses are held in English.",
-        "requirements": "High school diploma or equivalent. English proficiency required.",
-        "location": "Online",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€18,000 (EUR)",
-                "note": "Split into six semester installments"
-            }
-        },
-        "csnEligible": true,
-        "status": "closed",
-        "image": "/images/course-18.jpg"
+    "csnEligible": false,
+    "status": "open",
+    "image": "/images/course-17.jpg",
+    "area": "Cybersecurity",
+    "type": "Vocational",
+    "level": "Post-secondary",
+    "certificate": true
+  },
+  {
+    "id": 18,
+    "title": "Creative Coding",
+    "shortDescription": "Creative Coding training program for hands-on vocational learning.",
+    "courseDescription": "This program explores creative programming, generative art, and interactive installations. You will learn JavaScript, Processing, p5.js, and creative use of sensors and hardware. The curriculum includes digital art, sound, and visual programming. Courses are held in English.",
+    "requirements": "High school diploma or equivalent. English proficiency required.",
+    "location": "Online",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€18,000 (EUR)",
+        "note": "Split into six semester installments"
+      }
     },
-    {
-        "id": 19,
-        "title": "Teknisk Projektledning",
-        "shortDescription": "Teknisk Projektledning training program for hands-on vocational learning.",
-        "courseDescription": "Utbildningen ger dig kunskaper i projektledning, agila metoder, riskhantering och kommunikation. Du lär dig använda verktyg som Jira, Trello och MS Project. Praktiska projekt och LIA-perioder ger dig erfarenhet av att leda tekniska projekt inom IT och teknik. Kurserna hålls på svenska.",
-        "requirements": "High school diploma or equivalent. Swedish proficiency required.",
-        "location": "Sweden",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "Swedish",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€20,000 (EUR)",
-                "note": "Split into five semester installments"
-            }
-        },
-        "csnEligible": false,
-        "status": "open",
-        "image": "/images/course-19.jpg"
+    "csnEligible": true,
+    "status": "closed",
+    "image": "/images/course-18.jpg",
+    "area": "Art & Code",
+    "type": "Vocational",
+    "level": "Freestanding Course",
+    "certificate": true
+  },
+  {
+    "id": 19,
+    "title": "Teknisk Projektledning",
+    "shortDescription": "Teknisk Projektledning training program for hands-on vocational learning.",
+    "courseDescription": "Utbildningen ger dig kunskaper i projektledning, agila metoder, riskhantering och kommunikation. Du lär dig använda verktyg som Jira, Trello och MS Project. Praktiska projekt och LIA-perioder ger dig erfarenhet av att leda tekniska projekt inom IT och teknik. Kurserna hålls på svenska.",
+    "requirements": "High school diploma or equivalent. Swedish proficiency required.",
+    "location": "Sweden",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "Swedish",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€20,000 (EUR)",
+        "note": "Split into five semester installments"
+      }
     },
-    {
-        "id": 20,
-        "title": "Sustainable IT Practices",
-        "shortDescription": "Sustainable IT Practices training program for hands-on vocational learning.",
-        "courseDescription": "This program covers sustainable IT strategies, green computing, and energy-efficient system design. You will learn about lifecycle management, cloud sustainability, and environmental impact assessment. Practical projects and a 6-month internship prepare you for roles in sustainable IT. Courses are held in English.",
-        "requirements": "High school diploma or equivalent. English proficiency required.",
-        "location": "Online",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€18,000 (EUR)",
-                "note": "Split into six semester installments"
-            }
-        },
-        "csnEligible": true,
-        "status": "open",
-        "image": "/images/course-20.jpg"
+    "csnEligible": false,
+    "status": "open",
+    "image": "/images/course-19.jpg",
+    "area": "Management",
+    "type": "Vocational",
+    "level": "Master",
+    "certificate": true
+  },
+  {
+    "id": 20,
+    "title": "Sustainable IT Practices",
+    "shortDescription": "Sustainable IT Practices training program for hands-on vocational learning.",
+    "courseDescription": "This program covers sustainable IT strategies, green computing, and energy-efficient system design. You will learn about lifecycle management, cloud sustainability, and environmental impact assessment. Practical projects and a 6-month internship prepare you for roles in sustainable IT. Courses are held in English.",
+    "requirements": "High school diploma or equivalent. English proficiency required.",
+    "location": "Online",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€18,000 (EUR)",
+        "note": "Split into six semester installments"
+      }
     },
-    {
-        "id": 21,
-        "title": "Testautomatisering",
-        "shortDescription": "Testautomatisering training program for hands-on vocational learning.",
-        "courseDescription": "Utbildningen ger dig kunskaper i testautomatisering, teststrategier och verktyg som Selenium, Jenkins och Postman. Du lär dig om testdriven utveckling (TDD), CI/CD och kvalitetssäkring. Praktiska projekt och LIA-perioder förbereder dig för arbete som testautomatiserare. Kurserna hålls på svenska.",
-        "requirements": "High school diploma or equivalent. Swedish proficiency required.",
-        "location": "Sweden",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "Swedish",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€20,000 (EUR)",
-                "note": "Split into five semester installments"
-            }
-        },
-        "csnEligible": false,
-        "status": "closed",
-        "image": "/images/course-21.jpg"
+    "csnEligible": true,
+    "status": "open",
+    "image": "/images/course-20.jpg",
+    "area": "Sustainability",
+    "type": "Vocational",
+    "level": "Specialization",
+    "certificate": true
+  },
+  {
+    "id": 21,
+    "title": "Testautomatisering",
+    "shortDescription": "Testautomatisering training program for hands-on vocational learning.",
+    "courseDescription": "Utbildningen ger dig kunskaper i testautomatisering, teststrategier och verktyg som Selenium, Jenkins och Postman. Du lär dig om testdriven utveckling (TDD), CI/CD och kvalitetssäkring. Praktiska projekt och LIA-perioder förbereder dig för arbete som testautomatiserare. Kurserna hålls på svenska.",
+    "requirements": "High school diploma or equivalent. Swedish proficiency required.",
+    "location": "Sweden",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "Swedish",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€20,000 (EUR)",
+        "note": "Split into five semester installments"
+      }
     },
-    {
-        "id": 22,
-        "title": "Cloud Security",
-        "shortDescription": "Cloud Security training program for hands-on vocational learning.",
-        "courseDescription": "This program covers cloud security principles, risk management, and compliance. You will learn about identity and access management, encryption, and incident response in cloud environments. Tools include AWS Security Hub, Azure Security Center, and Google Cloud Security. Practical projects and a 6-month internship prepare you for roles in cloud security. Courses are held in English.",
-        "requirements": "High school diploma or equivalent. English proficiency required.",
-        "location": "Online",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€22,000 (EUR)",
-                "note": "Split into four semester installments"
-            }
-        },
-        "csnEligible": true,
-        "status": "open",
-        "image": "/images/course-22.jpg"
+    "csnEligible": false,
+    "status": "closed",
+    "image": "/images/course-21.jpg",
+    "area": "QA & Testing",
+    "type": "Vocational",
+    "level": "Post-secondary",
+    "certificate": true
+  },
+  {
+    "id": 22,
+    "title": "Cloud Security",
+    "shortDescription": "Cloud Security training program for hands-on vocational learning.",
+    "courseDescription": "This program covers cloud security principles, risk management, and compliance. You will learn about identity and access management, encryption, and incident response in cloud environments. Tools include AWS Security Hub, Azure Security Center, and Google Cloud Security. Practical projects and a 6-month internship prepare you for roles in cloud security. Courses are held in English.",
+    "requirements": "High school diploma or equivalent. English proficiency required.",
+    "location": "Online",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€22,000 (EUR)",
+        "note": "Split into four semester installments"
+      }
     },
-    {
-        "id": 23,
-        "title": "Webbanalys",
-        "shortDescription": "Webbanalys training program for hands-on vocational learning.",
-        "courseDescription": "Utbildningen ger dig kunskaper i webbanalys, datainsamling, Google Analytics, Tag Manager och datadriven marknadsföring. Du lär dig om A/B-testning, rapportering och optimering av webbplatser. Praktiska projekt och LIA-perioder förbereder dig för arbete som webbanalytiker. Kurserna hålls på svenska.",
-        "requirements": "High school diploma or equivalent. Swedish proficiency required.",
-        "location": "Sweden",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "Swedish",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€15,000 (EUR)",
-                "note": "Split into six semester installments"
-            }
-        },
-        "csnEligible": false,
-        "status": "open",
-        "image": "/images/course-23.jpg"
+    "csnEligible": true,
+    "status": "open",
+    "image": "/images/course-22.jpg",
+    "area": "Cybersecurity",
+    "type": "Vocational",
+    "level": "Master",
+    "certificate": true
+  },
+  {
+    "id": 23,
+    "title": "Webbanalys",
+    "shortDescription": "Webbanalys training program for hands-on vocational learning.",
+    "courseDescription": "Utbildningen ger dig kunskaper i webbanalys, datainsamling, Google Analytics, Tag Manager och datadriven marknadsföring. Du lär dig om A/B-testning, rapportering och optimering av webbplatser. Praktiska projekt och LIA-perioder förbereder dig för arbete som webbanalytiker. Kurserna hålls på svenska.",
+    "requirements": "High school diploma or equivalent. Swedish proficiency required.",
+    "location": "Sweden",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "Swedish",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€15,000 (EUR)",
+        "note": "Split into six semester installments"
+      }
     },
-    {
-        "id": 24,
-        "title": "Computer Vision",
-        "shortDescription": "Computer Vision training program for hands-on vocational learning.",
-        "courseDescription": "This program covers computer vision, image processing, and machine learning. You will learn about OpenCV, Python, deep learning, and neural networks for image recognition and analysis. Practical projects and a 6-month internship prepare you for roles in computer vision. Courses are held in English.",
-        "requirements": "High school diploma or equivalent. English proficiency required.",
-        "location": "Online",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€18,000 (EUR)",
-                "note": "Split into four semester installments"
-            }
-        },
-        "csnEligible": true,
-        "status": "closed",
-        "image": "/images/course-24.jpg"
+    "csnEligible": false,
+    "status": "open",
+    "image": "/images/course-23.jpg",
+    "area": "Marketing",
+    "type": "Vocational",
+    "level": "Post-secondary",
+    "certificate": true
+  },
+  {
+    "id": 24,
+    "title": "Computer Vision",
+    "shortDescription": "Computer Vision training program for hands-on vocational learning.",
+    "courseDescription": "This program covers computer vision, image processing, and machine learning. You will learn about OpenCV, Python, deep learning, and neural networks for image recognition and analysis. Practical projects and a 6-month internship prepare you for roles in computer vision. Courses are held in English.",
+    "requirements": "High school diploma or equivalent. English proficiency required.",
+    "location": "Online",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€18,000 (EUR)",
+        "note": "Split into four semester installments"
+      }
     },
-    {
-        "id": 25,
-        "title": "Digital Learning Design",
-        "shortDescription": "Digital Learning Design training program for hands-on vocational learning.",
-        "courseDescription": "This program covers instructional design, e-learning development, and digital pedagogy. You will learn to use tools like Articulate Storyline, Adobe Captivate, and Moodle. The curriculum includes multimedia production, learning analytics, and project management. Practical projects and a 6-month internship prepare you for roles in digital learning design. Courses are held in English.",
-        "requirements": "High school diploma or equivalent. English proficiency required.",
-        "location": "Online",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€20,000 (EUR)",
-                "note": "Split into five semester installments"
-            }
-        },
-        "csnEligible": false,
-        "status": "open",
-        "image": "/images/course-25.jpg"
+    "csnEligible": true,
+    "status": "closed",
+    "image": "/images/course-24.jpg",
+    "area": "AI & ML",
+    "type": "Vocational",
+    "level": "Master",
+    "certificate": true
+  },
+  {
+    "id": 25,
+    "title": "Digital Learning Design",
+    "shortDescription": "Digital Learning Design training program for hands-on vocational learning.",
+    "courseDescription": "This program covers instructional design, e-learning development, and digital pedagogy. You will learn to use tools like Articulate Storyline, Adobe Captivate, and Moodle. The curriculum includes multimedia production, learning analytics, and project management. Practical projects and a 6-month internship prepare you for roles in digital learning design. Courses are held in English.",
+    "requirements": "High school diploma or equivalent. English proficiency required.",
+    "location": "Online",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€20,000 (EUR)",
+        "note": "Split into five semester installments"
+      }
     },
-    {
-        "id": 26,
-        "title": "IT-säkerhetsspecialist",
-        "shortDescription": "IT-säkerhetsspecialist training program for hands-on vocational learning.",
-        "courseDescription": "Utbildningen ger dig kunskaper i IT-säkerhet, nätverkssäkerhet, penetrationstester och riskhantering. Du lär dig använda verktyg som Wireshark, Nessus och arbeta med säkerhetsstrategier och incidenthantering. Praktiska projekt och LIA-perioder förbereder dig för arbete som IT-säkerhetsspecialist. Kurserna hålls på svenska.",
-        "requirements": "High school diploma or equivalent. Swedish proficiency required.",
-        "location": "Sweden",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "Swedish",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€18,000 (EUR)",
-                "note": "Split into six semester installments"
-            }
-        },
-        "csnEligible": true,
-        "status": "open",
-        "image": "/images/course-26.jpg"
+    "csnEligible": false,
+    "status": "open",
+    "image": "/images/course-25.jpg",
+    "area": "Education",
+    "type": "Vocational",
+    "level": "Specialization",
+    "certificate": true
+  },
+  {
+    "id": 26,
+    "title": "IT-säkerhetsspecialist",
+    "shortDescription": "IT-säkerhetsspecialist training program for hands-on vocational learning.",
+    "courseDescription": "Utbildningen ger dig kunskaper i IT-säkerhet, nätverkssäkerhet, penetrationstester och riskhantering. Du lär dig använda verktyg som Wireshark, Nessus och arbeta med säkerhetsstrategier och incidenthantering. Praktiska projekt och LIA-perioder förbereder dig för arbete som IT-säkerhetsspecialist. Kurserna hålls på svenska.",
+    "requirements": "High school diploma or equivalent. Swedish proficiency required.",
+    "location": "Sweden",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "Swedish",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€18,000 (EUR)",
+        "note": "Split into six semester installments"
+      }
     },
-    {
-        "id": 27,
-        "title": "Augmented Reality Design",
-        "shortDescription": "Augmented Reality Design training program for hands-on vocational learning.",
-        "courseDescription": "This program covers AR development, Unity, 3D modeling, and interaction design. You will learn to create AR experiences for mobile and wearable devices, using tools like Unity, Vuforia, and Blender. Practical projects and a 6-month internship prepare you for roles in AR design. Courses are held in English.",
-        "requirements": "High school diploma or equivalent. English proficiency required.",
-        "location": "Online",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€22,000 (EUR)",
-                "note": "Split into six semester installments"
-            }
-        },
-        "csnEligible": false,
-        "status": "closed",
-        "image": "/images/course-27.jpg"
+    "csnEligible": true,
+    "status": "open",
+    "image": "/images/course-26.jpg",
+    "area": "Cybersecurity",
+    "type": "Vocational",
+    "level": "Master",
+    "certificate": true
+  },
+  {
+    "id": 27,
+    "title": "Augmented Reality Design",
+    "shortDescription": "Augmented Reality Design training program for hands-on vocational learning.",
+    "courseDescription": "This program covers AR development, Unity, 3D modeling, and interaction design. You will learn to create AR experiences for mobile and wearable devices, using tools like Unity, Vuforia, and Blender. Practical projects and a 6-month internship prepare you for roles in AR design. Courses are held in English.",
+    "requirements": "High school diploma or equivalent. English proficiency required.",
+    "location": "Online",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€22,000 (EUR)",
+        "note": "Split into six semester installments"
+      }
     },
-    {
-        "id": 28,
-        "title": "Javautvecklare",
-        "shortDescription": "Javautvecklare training program for hands-on vocational learning.",
-        "courseDescription": "Utbildningen ger dig kunskaper i Java-programmering, objektorienterad utveckling, databashantering och ramverk som Spring. Du lär dig använda verktyg som IntelliJ IDEA, Git och arbeta med moderna utvecklingsmetoder. Praktiska projekt och LIA-perioder förbereder dig för arbete som javautvecklare. Kurserna hålls på svenska.",
-        "requirements": "High school diploma or equivalent. Swedish proficiency required.",
-        "location": "Sweden",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "Swedish",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€20,000 (EUR)",
-                "note": "Split into five semester installments"
-            }
-        },
-        "csnEligible": true,
-        "status": "open",
-        "image": "/images/course-28.jpg"
+    "csnEligible": false,
+    "status": "closed",
+    "image": "/images/course-27.jpg",
+    "area": "AR/VR",
+    "type": "Vocational",
+    "level": "Specialization",
+    "certificate": true
+  },
+  {
+    "id": 28,
+    "title": "Javautvecklare",
+    "shortDescription": "Javautvecklare training program for hands-on vocational learning.",
+    "courseDescription": "Utbildningen ger dig kunskaper i Java-programmering, objektorienterad utveckling, databashantering och ramverk som Spring. Du lär dig använda verktyg som IntelliJ IDEA, Git och arbeta med moderna utvecklingsmetoder. Praktiska projekt och LIA-perioder förbereder dig för arbete som javautvecklare. Kurserna hålls på svenska.",
+    "requirements": "High school diploma or equivalent. Swedish proficiency required.",
+    "location": "Sweden",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "Swedish",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€20,000 (EUR)",
+        "note": "Split into five semester installments"
+      }
     },
-    {
-        "id": 29,
-        "title": "Fintech Software Developer",
-        "shortDescription": "Fintech Software Developer training program for hands-on vocational learning.",
-        "courseDescription": "This program covers software development for the financial sector, including payment systems, blockchain, and security. You will learn about Java, Python, APIs, and cloud platforms. The curriculum includes compliance, risk management, and agile methodologies. Practical projects and a 6-month internship prepare you for fintech roles. Courses are held in English.",
-        "requirements": "High school diploma or equivalent. English proficiency required.",
-        "location": "Online",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "English",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€15,000 (EUR)",
-                "note": "Split into six semester installments"
-            }
-        },
-        "csnEligible": false,
-        "status": "open",
-        "image": "/images/course-29.jpg"
+    "csnEligible": true,
+    "status": "open",
+    "image": "/images/course-28.jpg",
+    "area": "Software Development",
+    "type": "Vocational",
+    "level": "Bachelor",
+    "certificate": true
+  },
+  {
+    "id": 29,
+    "title": "Fintech Software Developer",
+    "shortDescription": "Fintech Software Developer training program for hands-on vocational learning.",
+    "courseDescription": "This program covers software development for the financial sector, including payment systems, blockchain, and security. You will learn about Java, Python, APIs, and cloud platforms. The curriculum includes compliance, risk management, and agile methodologies. Practical projects and a 6-month internship prepare you for fintech roles. Courses are held in English.",
+    "requirements": "High school diploma or equivalent. English proficiency required.",
+    "location": "Online",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "English",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€15,000 (EUR)",
+        "note": "Split into six semester installments"
+      }
     },
-    {
-        "id": 30,
-        "title": "Databasutveckling",
-        "shortDescription": "Databasutveckling training program for hands-on vocational learning.",
-        "courseDescription": "Utbildningen ger dig kunskaper i databasutveckling, SQL, datamodellering och databashantering. Du lär dig använda verktyg som SQL Server, MySQL och arbeta med dataintegration och optimering. Praktiska projekt och LIA-perioder förbereder dig för arbete som databasutvecklare. Kurserna hålls på svenska.",
-        "requirements": "High school diploma or equivalent. Swedish proficiency required.",
-        "location": "Sweden",
-        "startDate": "Sep 2025",
-        "startingDate": "Sep 2025",
-        "place": "Sweden",
-        "internship": "6 months",
-        "duration": "2 years",
-        "language": "Swedish",
-        "degree": "Higher Vocational Education",
-        "tuition": {
-            "nordic": {
-                "dates": "Feb 5 – May 12, 2025",
-                "fee": "No tuition fee (YH – government-funded)"
-            },
-            "international": {
-                "dates": "Jan 7 – Apr 2, 2025",
-                "fee": "€20,000 (EUR)",
-                "note": "Split into five semester installments"
-            }
-        },
-        "csnEligible": true,
-        "status": "closed",
-        "image": "/images/course-30.jpg"
-    }
+    "csnEligible": false,
+    "status": "open",
+    "image": "/images/course-29.jpg",
+    "area": "Fintech",
+    "type": "Vocational",
+    "level": "Master",
+    "certificate": true
+  },
+  {
+    "id": 30,
+    "title": "Databasutveckling",
+    "shortDescription": "Databasutveckling training program for hands-on vocational learning.",
+    "courseDescription": "Utbildningen ger dig kunskaper i databasutveckling, SQL, datamodellering och databashantering. Du lär dig använda verktyg som SQL Server, MySQL och arbeta med dataintegration och optimering. Praktiska projekt och LIA-perioder förbereder dig för arbete som databasutvecklare. Kurserna hålls på svenska.",
+    "requirements": "High school diploma or equivalent. Swedish proficiency required.",
+    "location": "Sweden",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "6 months",
+    "duration": "2 years",
+    "language": "Swedish",
+    "degree": "Higher Vocational Education",
+    "tuition": {
+      "nordic": {
+        "dates": "Feb 5 – May 12, 2025",
+        "fee": "No tuition fee (YH – government-funded)"
+      },
+      "international": {
+        "dates": "Jan 7 – Apr 2, 2025",
+        "fee": "€20,000 (EUR)",
+        "note": "Split into five semester installments"
+      }
+    },
+    "csnEligible": true,
+    "status": "closed",
+    "image": "/images/course-30.jpg",
+    "area": "Databases",
+    "type": "Vocational",
+    "level": "Bachelor",
+    "certificate": true
+  },
+
+  {
+    "id": 31,
+    "title": "IT Fundamentals",
+    "shortDescription": "Introductory IT course covering basic concepts for beginners.",
+    "courseDescription": "This freestanding course provides a broad overview of basic IT knowledge. Topics include computer hardware, operating systems, software applications, basic networking, and IT security essentials. Ideal for those starting their journey in tech or seeking foundational digital literacy.",
+    "requirements": "None. Open to all learners regardless of background.",
+    "location": "Online",
+    "startDate": "Sep 2025",
+    "startingDate": "Sep 2025",
+    "place": "Sweden",
+    "internship": "None",
+    "duration": "3 months",
+    "language": "English",
+    "degree": "None",
+    "tuition": {
+      "nordic": {
+        "dates": "Sep 15 – Dec 15, 2025",
+        "fee": "No fee"
+      },
+      "international": {
+        "dates": "Sep 15 – Dec 15, 2025",
+        "fee": "€50 (EUR)",
+        "note": "One-time payment"
+      }
+    },
+    "csnEligible": false,
+    "status": "open",
+    "image": "/images/course-31.jpg",
+    "area": "IT Basics",
+    "type": "Freestanding",
+    "level": "Freestanding Course",
+    "certificate": false
+  }
 ]
