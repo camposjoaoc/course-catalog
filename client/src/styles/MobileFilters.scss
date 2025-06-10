@@ -7,45 +7,105 @@
   .toggle-button {
     background-color: #dfefff;
     border: none;
-    padding: 0.6rem;
+    padding: 1rem;
     font-weight: bold;
     width: 100%;
+    margin-bottom: 1rem;
   }
 
-.filters-dropdown {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  .filters-panel.mobile {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 14px;
+    box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.08);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 0.7rem 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 
-  select {
-    padding: 0.5rem 1rem;
-    border: 1px solid $color-secondary;
-    border-radius: 6px;
-    background-color: #ffffff;
-    font-family: $font-family-content;
-    font-size: 1rem;
-    color: #333;
+    .filter-section {
+      background: #fff;
+      border-radius: 10px;
+      padding: 0.7rem 0.5rem;
+      margin-bottom: 0.7rem;
+      box-shadow: 0 1px 4px rgba(36, 114, 197, 0.04);
 
-    appearance: none; // removes native arrow
-    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
-    background-repeat: no-repeat;
-    background-position: right 0.75rem center;
-    background-size: 1rem;
+      h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        color: $color-primary;
+        font-family: $font-family-heading;
+      }
 
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease;
+      .filter-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.3rem 1.2rem;
+        margin-bottom: 0.5rem;
 
-    &:hover {
-      border-color: $color-primary;
-    }
+        label {
+          font-size: 1rem;
+          color: #222;
+          display: flex;
+          align-items: center;
+          gap: 0.4em;
+          cursor: pointer;
+        }
+      }
 
-    &:focus {
-      outline: none;
-      border-color: $color-primary;
-      box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.2);
+      select {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        font-family: $font-family-content;
+        background-color: #fff;
+        color: #333;
+        transition: border 0.2s;
+        box-shadow: none;
+        appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 0.75rem center;
+        background-size: 1rem;
+
+        &:hover {
+          border-color: $color-primary;
+        }
+        &:focus {
+          outline: none;
+          border-color: $color-primary;
+          box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.2);
+        }
+      }
     }
   }
-}
 
+  .reset-filters {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+
+    .reset-filters-btn,
+    .apply-filters-btn {
+      margin: 1rem 0;
+      padding: 0.5rem 1.5rem;
+      background: $color-primary;
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 600;
+      font-family: $font-family-content;
+      font-size: 1rem;
+      transition: background 0.2s;
+
+      &:hover {
+        background: darken($color-primary, 8%);
+      }
+    }
+  }
 }

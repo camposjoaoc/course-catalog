@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import CourseCard from "../components/CourseCard";
-import CoursesData from "../data/CoursesData.json";
+import CoursesData from "../database/CoursesData.json";
 import SearchBar from "../components/SearchBar";
 import Sidebar from "../components/SideFilters";
 import InfoSection from "../components/InfoSection";
