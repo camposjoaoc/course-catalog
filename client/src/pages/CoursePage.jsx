@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "../styles/CoursePage.scss";
-import CoursesData from "../data/CoursesData.json";
+import CoursesData from "../database/CoursesData.json";
 import Spinner from "../components/Spinner";
 
 const CoursePage = () => {
