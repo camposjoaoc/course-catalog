@@ -1,14 +1,14 @@
 @use "./Variables" as *;
 @use "./Global" as *;
 
-// Root styles for the app
+
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-// Global styles for the app
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -16,7 +16,7 @@
   height: auto;
   min-height: 70vh
 }
-// Global styles for header and footer
+
 header,
 footer {
   width: 100vw;

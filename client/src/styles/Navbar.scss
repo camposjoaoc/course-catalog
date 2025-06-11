@@ -35,17 +35,20 @@ header.navbar {
     }
 
     .auth-btn {
-      background: $color-primary;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-      cursor: pointer;
+    padding: 10px 15px;
+    width: 100px;
+    background-color: $color-primary;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: $font-family-heading;
 
       &:hover {
         background: $color-secondary;
-        color: black;
+        color: $color-primary;
+        border: 2px solid #2472c5;
       }
     }
 

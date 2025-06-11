@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/SideFilters.scss";
-import schoolLogo from "../assets/img/schoolLogo.jpg";
+import schoolLogo from "../assets/img/schoolLogo.png";
 import FiltersPanel from "./FiltersPanel";
 import { getFiltersConfig } from "../utils/filtersConfig";
 
