@@ -3,6 +3,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import "../styles/CoursePage.scss";
 import CoursesData from "../database/CoursesData.json";
 import Spinner from "../components/Spinner";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 const CoursePage = () => {
   const { id } = useParams();
@@ -23,12 +25,14 @@ const CoursePage = () => {
 
   if (!course) {
     return (
-      <div className="course-page-container">
+      <div className="course-page-container course-not-found-center">
+        <p className="course-not-found">Course not found.</p>
+
         <p className="course-not-found">
-          Course not found. Please check the course ID or go back to the course
-          list.
+          The course you are looking for does not exist or has been removed.
         </p>
         <button className="back-button" onClick={() => navigate("/")}>
+          <FontAwesomeIcon icon={faChevronLeft} />
           Back to Home
         </button>
       </div>
@@ -41,7 +45,7 @@ const CoursePage = () => {
         <div className="course-hero-grid">
           <div className="course-image">
             <button className="back-button" onClick={() => navigate("/")}>
-              Back
+              <FontAwesomeIcon icon={faChevronLeft} />
             </button>
             <img src={course.image} alt={course.title} />
           </div>
