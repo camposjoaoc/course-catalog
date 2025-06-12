@@ -10,9 +10,8 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <BrowserRouter basename="/school-catalog">
+    <BrowserRouter>
       <ScrollToTop />
-
       <Navbar />
       <div className="container">
         <Routes>
@@ -22,7 +21,6 @@ function App() {
         </Routes>
       </div>
       <Footer />
-
     </BrowserRouter>
   );
 }
